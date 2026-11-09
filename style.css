@@ -564,3 +564,25 @@ footer {
   box-shadow: 0 0 0 6px var(--amber);
   border-radius: 2px;
 }
+
+/* Fichas de proyecto: método Problema · Idea · Concepto */
+.pic {
+  margin: 8px 0 16px;
+  display: grid;
+  gap: 10px;
+}
+.pic div {
+  border-left: 2px solid var(--sand);
+  padding-left: 12px;
+}
+.pic dt {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+.pic dd {
+  margin: 2px 0 0;
+  line-height: 1.5;
+}
