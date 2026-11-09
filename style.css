@@ -16,7 +16,7 @@
   --line: rgba(85, 66, 66, 0.14);
   --shadow: rgba(85, 66, 66, 0.16);
 
-  --font-brand: "Gabarito", sans-serif;
+  --font-brand: "Nunito", sans-serif;
 }
 body {
   font-family: var(--font-brand);
@@ -188,7 +188,7 @@ footer {
   position: absolute;
   z-index: 0;
   pointer-events: none;
-  background: url("assets/brand/spiral-relief.svg") no-repeat center / contain;
+  background: url("assets/brand/gd-relief.svg") no-repeat center / contain;
   /* Relieve: luz blanca arriba-izquierda, sombra suave abajo-derecha */
   filter: drop-shadow(-1px -1px 0 rgba(255, 255, 255, 0.7))
     drop-shadow(1px 1px 0 rgba(85, 66, 66, 0.08));
@@ -196,10 +196,10 @@ footer {
 }
 
 .layer.social::before {
-  width: 300px;
+  width: 260px;
   height: 300px;
-  right: -70px;
-  top: 50px;
+  right: -60px;
+  top: 40px;
   transform: rotate(-8deg);
 }
 
