@@ -12,7 +12,7 @@
   --sand: #c9ae80;       /* trazo beige: líneas, bordes, relieve */
   --brown: #554242;      /* marrón oscuro: nav, pie, botones, marca */
   --amber: #e6b458;      /* ámbar: acento (bordes, hover) */
-  --deboss: #d3bf9c;     /* grabado en hueco sobre beige */
+  --deboss: #857254;     /* grabado en hueco sobre beige (3,3:1, WCAG AA texto grande) */
   --ink: #4a3f35;        /* texto */
   --paper: #f8f3ea;      /* tarjetas (crema aclarado) */
 
@@ -529,4 +529,25 @@ footer {
 
 .layer.projects h2 {
   margin-top: 0;
+}
+
+/* Solo para lectores de pantalla */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Foco visible con teclado: anillo de dos tonos, se ve sobre crema y sobre marrón */
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--amber);
+  border-radius: 2px;
 }
