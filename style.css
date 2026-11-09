@@ -149,3 +149,49 @@ footer {
   font-size: 1.4rem;
   color: #25d366; /* El verde de WhatsApp solo en el icono para que destaque */
 }
+
+/* ---- Marca hoja: usos discretos (relieve tono sobre tono + avatar) ---- */
+.layer.social {
+  position: relative;
+  overflow: hidden;
+}
+
+.layer.social > * {
+  position: relative;
+  z-index: 1;
+}
+
+.layer.social::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  background: url("assets/brand/leaf-relief.svg") no-repeat center / contain;
+  /* Relieve: luz blanca arriba-izquierda, sombra suave abajo-derecha */
+  filter: drop-shadow(-1px -1px 0 rgba(255, 255, 255, 0.7))
+    drop-shadow(1px 1px 0 rgba(98, 56, 31, 0.08));
+  opacity: 0.55;
+}
+
+.layer.social::before {
+  width: 220px;
+  height: 470px;
+  right: -40px;
+  top: 40px;
+  transform: rotate(18deg);
+}
+
+.footer-mark {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 16px;
+}
+
+@media (max-width: 600px) {
+  .layer.social::before {
+    width: 140px;
+    height: 300px;
+    right: -50px;
+  }
+}
