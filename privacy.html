@@ -8,25 +8,26 @@
       href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        font-family: "Gabarito", sans-serif;
+        font-family: var(--font-brand);
         line-height: 1.6;
-        color: #62381f;
+        color: var(--text);
         max-width: 900px;
         margin: 40px auto;
         padding: 20px;
-        background: #f2e9d7;
+        background: var(--bg);
       }
       h1,
       h2 {
-        color: #ba6f36;
-        border-bottom: 1px solid #ba6f36;
+        color: var(--brown);
+        border-bottom: 2px solid var(--amber);
         padding-bottom: 5px;
         margin-top: 40px;
       }
       h3 {
-        color: #62381f;
+        color: var(--brown);
         text-transform: uppercase;
         font-size: 0.9rem;
         letter-spacing: 1px;
@@ -35,17 +36,18 @@
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
-        background: #fff;
+        background: var(--paper);
         font-size: 0.9rem;
       }
       th,
       td {
-        border: 1px solid #ddd;
+        border: 1px solid var(--sand);
         padding: 12px;
         text-align: left;
       }
       th {
-        background-color: #eee;
+        background-color: var(--beige);
+        color: var(--brown);
       }
       .lang-grid {
         display: grid;
@@ -56,7 +58,8 @@
         display: inline-block;
         margin-top: 50px;
         text-decoration: none;
-        color: #ba6f36;
+        color: var(--brown);
+        border-bottom: 2px solid var(--amber);
         font-weight: bold;
       }
       @media (max-width: 600px) {
@@ -69,7 +72,7 @@
     <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#62381f" />
+    <meta name="theme-color" content="#554242" />
   </head>
   <body>
     <h1>Legal & Confidentialité</h1>
@@ -108,7 +111,7 @@
       </section>
     </div>
 
-    <hr style="border: 0; border-top: 1px solid #ba6f36; margin: 40px 0" />
+    <hr style="border: 0; border-top: 1px solid var(--sand); margin: 40px 0" />
 
     <div class="lang-grid">
       <section>
@@ -173,11 +176,8 @@
 
     <footer>
       <p>
-        &copy; 2005–<span id="current-year"></span> **Gofio Design** |
-        <a
-          href="privacy.html"
-          style="color: inherit; text-decoration: underline"
-          >Legal & Privacy</a
+        &copy; 2005–<span id="current-year"></span> <strong>Gofio Design</strong> |
+        <a href="privacy.html" class="footer-legal">Legal & Privacy</a
         >
       </p>
       <div id="email-placeholder"></div>
