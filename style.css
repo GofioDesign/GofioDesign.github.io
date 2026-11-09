@@ -188,7 +188,7 @@ footer {
   position: absolute;
   z-index: 0;
   pointer-events: none;
-  background: url("assets/brand/leaf-relief.svg") no-repeat center / contain;
+  background: url("assets/brand/spiral-relief.svg") no-repeat center / contain;
   /* Relieve: luz blanca arriba-izquierda, sombra suave abajo-derecha */
   filter: drop-shadow(-1px -1px 0 rgba(255, 255, 255, 0.7))
     drop-shadow(1px 1px 0 rgba(85, 66, 66, 0.08));
@@ -196,11 +196,11 @@ footer {
 }
 
 .layer.social::before {
-  width: 220px;
-  height: 470px;
-  right: -40px;
-  top: 40px;
-  transform: rotate(18deg);
+  width: 300px;
+  height: 300px;
+  right: -70px;
+  top: 50px;
+  transform: rotate(-8deg);
 }
 
 .footer-mark {
@@ -212,9 +212,9 @@ footer {
 
 @media (max-width: 600px) {
   .layer.social::before {
-    width: 140px;
-    height: 300px;
-    right: -50px;
+    width: 180px;
+    height: 180px;
+    right: -60px;
   }
 }
 
