@@ -1,0 +1,4 @@
+gd-glifos.woff2 contiene solo la G mayúscula del monograma de Gofio Design.
+Está derivada de la D de Poiret One (c) 2011 Denis Masharov, con licencia
+SIL Open Font License 1.1 (https://openfontlicense.org). Se usa en style.css
+con unicode-range: U+0047 delante de "Poiret One".

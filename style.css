@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "GD Glifos";
+  src: url("assets/fonts/gd-glifos.woff2") format("woff2");
+  unicode-range: U+0047;
+  font-display: swap;
+}
 :root {
   /* ---- Paleta de marca Gofio Design (hoja) ----
      Cambia aquí y se actualiza toda la web. */
@@ -17,6 +23,8 @@
   --shadow: rgba(85, 66, 66, 0.16);
 
   --font-brand: "Nunito", sans-serif;
+  /* Titulares: Poiret One con la G del monograma (assets/fonts/gd-glifos.woff2) */
+  --font-display: "GD Glifos", "Poiret One", var(--font-brand);
 }
 body {
   font-family: var(--font-brand);
@@ -29,6 +37,11 @@ h1,
 h2,
 h3 {
   color: var(--brown);
+}
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
 }
 ::selection {
   background: var(--amber);
@@ -131,14 +144,14 @@ footer {
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 4px 6px var(--shadow)); /* Un toque sutil de relieve */
+  /* El sello lleva su propio gofrado (luz arriba-izquierda, sombra abajo-derecha) */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1em;
+  font-size: 3rem;
+  letter-spacing: 0.08em;
   margin-top: 10px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .cta-container {
@@ -188,7 +201,7 @@ footer {
   position: absolute;
   z-index: 0;
   pointer-events: none;
-  background: url("assets/brand/gd-relief.svg") no-repeat center / contain;
+  background: url("assets/brand/sello-relieve.svg") no-repeat center / contain;
   /* Relieve: luz blanca arriba-izquierda, sombra suave abajo-derecha */
   filter: drop-shadow(-1px -1px 0 rgba(255, 255, 255, 0.7))
     drop-shadow(1px 1px 0 rgba(85, 66, 66, 0.08));
@@ -196,11 +209,11 @@ footer {
 }
 
 .layer.social::before {
-  width: 260px;
+  width: 300px;
   height: 300px;
-  right: -60px;
+  right: -80px;
   top: 40px;
-  transform: rotate(-8deg);
+  transform: rotate(-12deg);
 }
 
 .footer-mark {
@@ -238,7 +251,6 @@ footer {
 .projects-mark img {
   display: block;
   margin: 0 auto 12px;
-  border-radius: 16px;
 }
 
 .projects-grid {
@@ -396,4 +408,119 @@ footer {
 }
 .whatsapp-btn:hover i {
   color: var(--brown);
+}
+
+/* ---- Portada: sección de proyectos web ---- */
+.home-projects {
+  background: var(--beige);
+}
+
+.home-projects > p {
+  margin: 0;
+}
+
+.home-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.home-project {
+  display: block;
+  color: var(--brown);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid rgba(85, 66, 66, 0.15);
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-project:hover img {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(85, 66, 66, 0.14);
+}
+
+.home-project span {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+.home-project i {
+  font-size: 0.75em;
+  margin-left: 4px;
+  color: var(--brown);
+}
+
+.home-projects-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.projects-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--brown);
+  color: var(--cream);
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border: 1px solid var(--brown);
+  transition: all 0.3s ease;
+}
+
+.projects-btn:hover {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--brown);
+}
+
+/* ---- Proyectos en desarrollo ---- */
+.project-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(
+      135deg,
+      rgba(85, 66, 66, 0.04) 0 12px,
+      transparent 12px 24px
+    ),
+    var(--bg);
+}
+
+.project-placeholder i {
+  font-size: 3.5rem;
+  color: var(--sand);
+  opacity: 0.8;
+}
+
+.project-card.is-idea:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.project-soon {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brown);
+  border: 1px dashed var(--sand);
+  border-radius: 3px;
+  padding: 2px 10px;
+}
+
+.layer.projects h2 {
+  margin-top: 0;
 }
