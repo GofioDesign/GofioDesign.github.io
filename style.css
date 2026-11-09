@@ -315,3 +315,117 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---- Portada: sección de proyectos web ---- */
+.home-projects {
+  background: var(--white);
+}
+
+.home-projects > p {
+  margin: 0;
+}
+
+.home-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.home-project {
+  display: block;
+  color: var(--brown);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid rgba(98, 56, 31, 0.15);
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-project:hover img {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(98, 56, 31, 0.14);
+}
+
+.home-project span {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+.home-project i {
+  font-size: 0.75em;
+  margin-left: 4px;
+  color: var(--accent);
+}
+
+.home-projects-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.projects-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.projects-btn:hover {
+  background: var(--white);
+  color: var(--accent);
+}
+
+/* ---- Proyectos en desarrollo ---- */
+.project-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(
+      135deg,
+      rgba(98, 56, 31, 0.04) 0 12px,
+      transparent 12px 24px
+    ),
+    var(--bg);
+}
+
+.project-placeholder i {
+  font-size: 3.5rem;
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+.project-card.is-idea:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.project-soon {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px dashed var(--accent);
+  border-radius: 3px;
+  padding: 2px 10px;
+}
+
+.layer.projects h2 {
+  margin-top: 0;
+}
