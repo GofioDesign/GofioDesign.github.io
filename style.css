@@ -11,7 +11,8 @@
   --beige: #e6d7ba;      /* capas alternas, bloques */
   --sand: #c9ae80;       /* trazo beige: líneas, bordes, relieve */
   --brown: #554242;      /* marrón oscuro: nav, pie, botones, marca */
-  --amber: #e6b458;      /* ámbar: acento (hoja, bordes, hover) */
+  --amber: #e6b458;      /* ámbar: acento (bordes, hover) */
+  --deboss: #d3bf9c;     /* grabado en hueco sobre beige */
   --ink: #4a3f35;        /* texto */
   --paper: #f8f3ea;      /* tarjetas (crema aclarado) */
 
@@ -148,10 +149,15 @@ footer {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
   letter-spacing: 0.08em;
   margin-top: 10px;
   font-weight: 400;
+  /* Grabado en hueco: tono sobre tono, sombra arriba-izquierda y luz abajo-derecha */
+  color: var(--deboss);
+  text-shadow:
+    -1px -1px 1px rgba(85, 66, 66, 0.45),
+    1px 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .cta-container {
