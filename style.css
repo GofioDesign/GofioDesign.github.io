@@ -13,6 +13,7 @@
   --brown: #554242;      /* marrón oscuro: nav, pie, botones, marca */
   --amber: #e6b458;      /* ámbar: acento (bordes, hover) */
   --deboss: #857254;     /* grabado en hueco sobre beige (3,3:1, WCAG AA texto grande) */
+  --emboss-ink: #6f5e46; /* relieve para texto normal: 5,6:1 en paper, 4,9:1 en crema */
   --ink: #4a3f35;        /* texto */
   --paper: #f8f3ea;      /* tarjetas (crema aclarado) */
 
@@ -112,7 +113,7 @@ h2 {
 
 .card h3 i {
   margin-right: 10px; /* Espacio entre icono y texto */
-  color: var(--brown);
+  color: inherit;
   font-size: 1.2rem; /* Un poco más grande para que destaque */
   vertical-align: middle;
 }
@@ -590,4 +591,24 @@ footer {
 .pic dd {
   margin: 2px 0 0;
   line-height: 1.5;
+}
+
+/* Títulos de sección como «GOFIO DESIGN»: mayúsculas espaciadas y grabados en hueco
+   (texto grande: --deboss cumple 3:1 sobre crema y beige) */
+.layer h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--deboss);
+  text-shadow:
+    -1px -1px 1px rgba(85, 66, 66, 0.45),
+    1px 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* Subsecciones (tarjetas) como el tagline: texto e icono en relieve */
+.card h3,
+.project-body h3 {
+  color: var(--emboss-ink);
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.9),
+    1px 1px 1px rgba(85, 66, 66, 0.4);
 }
