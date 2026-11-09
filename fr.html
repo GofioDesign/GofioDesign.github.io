@@ -25,7 +25,7 @@
     <meta property="og:image" content="https://gofiodesign.eu/assets/brand/og-image.png" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poiret+One&display=swap"
       rel="stylesheet"
     />
     <link
@@ -33,12 +33,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="style.css?v=20261109" />
+    <link rel="stylesheet" href="style.css?v=20261109i" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#62381f" />
+    <meta name="theme-color" content="#554242" />
   </head>
   <body>
     <nav class="lang-nav">
@@ -50,7 +50,7 @@
     </nav>
     <header class="hero">
       <div class="logo-container">
-        <img class="logo-mark" src="assets/brand/logo.svg" alt="Gofio Design" width="140" height="140" />
+        <img class="logo-mark" src="assets/brand/logo-sello.svg" alt="Gofio Design" width="140" height="140" />
       </div>
       <h1>GOFIO DESIGN</h1>
       <p>
@@ -172,81 +172,27 @@
       </div>
     </main>
     <footer>
-      <img class="footer-mark" src="assets/brand/avatar.svg" alt="" width="44" height="44" />
+      <img class="footer-mark" src="assets/brand/logo-sello-oscuro.svg" alt="" width="44" height="44" />
       <p>
         &copy; 2005–<span id="current-year"></span> **Gofio Design** |
-        <a
-          href="privacy.html"
-          style="color: inherit; text-decoration: underline"
-          >Legal & Privacy</a
+        <a href="privacy.html" class="footer-legal">Legal & Privacy</a
         >
       </p>
       <div id="email-placeholder"></div>
     </footer>
-    <div
-      id="cookie-banner"
-      style="
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: #62381f;
-        color: #f2e9d7;
-        padding: 20px;
-        text-align: center;
-        font-size: 14px;
-        z-index: 10000;
-        box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.4);
-        border-top: 1px solid #ba6f36;
-      "
-    >
-      <p
-        style="
-          margin-bottom: 15px;
-          max-width: 800px;
-          margin-left: auto;
-          margin-right: auto;
-          line-height: 1.4;
-        "
-      >
+    <div id="cookie-banner" class="cookie-banner">
+      <p>
         Nous utilisons des cookies pour améliorer votre expérience et analyser
         le trafic. Vous pouvez accepter tous les cookies ou refuser ceux qui ne
         sont pas essentiels.
-        <a
-          href="privacy.html"
-          style="color: #ba6f36; text-decoration: underline"
-          >En savoir plus</a
+        <a href="privacy.html">En savoir plus</a
         >.
       </p>
-      <div style="display: flex; justify-content: center; gap: 15px">
-        <button
-          onclick="acceptCookies()"
-          style="
-            background: #ba6f36;
-            border: none;
-            color: white;
-            padding: 10px 25px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-weight: bold;
-            min-width: 120px;
-          "
-        >
+      <div class="cookie-actions">
+        <button type="button" class="cookie-accept" onclick="acceptCookies()">
           Accepter
         </button>
-        <button
-          onclick="rejectCookies()"
-          style="
-            background: transparent;
-            border: 1px solid #f2e9d7;
-            color: #f2e9d7;
-            padding: 10px 25px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-weight: normal;
-            min-width: 120px;
-          "
-        >
+        <button type="button" class="cookie-reject" onclick="rejectCookies()">
           Refuser
         </button>
       </div>

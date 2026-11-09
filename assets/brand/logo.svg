@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Gofio Design">
-  <rect width="96" height="96" rx="20" fill="#554242"/>
-  <g transform="translate(26.18 18) scale(0.808081)">
-    <path d="M27,3 C48,14 48,60.25 27,71.25 C6,60.25 6,14 27,3 Z" fill="#E6B458" stroke="#E6B458" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M27,3 C26.6,15 25,26 25,37.125 C25,48.25 26.6,59.25 27,71.25 C27.4,59.25 29,48.25 29,37.125 C29,26 27.4,15 27,3 Z" fill="#554242"/>
-    <circle cx="18" cy="37.125" r="4" fill="#554242"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 175" role="img" aria-label="Gofio Design"><g fill="#554242"><path d="M64 99.1887V171.876C27.0639 161.429 0 127.47 0 87.1886C0 42.6581 33.0758 5.85272 76 0V87.1886H38V99.1887H64Z"/><path d="M100 1.52588e-05C142.924 5.85274 176 42.6581 176 87.1887C176 131.719 142.924 168.525 100 174.377L100 1.52588e-05Z"/></g></svg>
