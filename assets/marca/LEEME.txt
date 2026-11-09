@@ -1,0 +1,14 @@
+Kit de marca Gofio Design (SVG), 9 nov 2026
+
+Todos los textos están convertidos a trazos, así que no hace falta instalar fuentes.
+- monograma-relieve-claro / -oscuro: el monograma en relieve, sin fondo. Uso principal.
+- monograma-plano-marron / -crema / -ambar: versiones planas, para impresión a una tinta, bordados o sellos.
+- titulo-hueco-claro / -oscuro: «GOFIO DESIGN» grabado en hueco.
+- logotipo-horizontal-claro / -oscuro: monograma, título y tagline en línea.
+- logotipo-vertical-claro / -oscuro: monograma encima, con el título y el tagline debajo.
+- icono-app: 512x512 sin marco. favicon: monograma sin marco, marrón (crema si el navegador está en modo oscuro).
+- og-image: imagen para compartir en redes (1200x630).
+El relieve y el hueco se ven bien sobre fondos crema/beige (claro) o marrón (oscuro).
+Paleta: crema #EFE4CF, beige #E6D7BA, arena #C9AE80, marrón #554242, ámbar #E6B458, texto #4A3F35.
+Tagline: Curiosidad natural (EN Natural curiosity · FR Curiosité naturelle · DE Natürliche Neugier).
+Línea de método: Del problema a la idea, de la idea al concepto.
