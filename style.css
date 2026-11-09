@@ -162,10 +162,15 @@ footer {
 
 .hero .tagline {
   font-size: 1.35rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--brown);
   margin: 6px 0 4px;
+  /* Gofrado (en relieve), al revés que el título en hueco: luz arriba-izquierda, sombra abajo-derecha.
+     Texto grande en negrita: --deboss da 3,3:1 sobre beige (WCAG AA) */
+  color: var(--deboss);
+  text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.85),
+    1px 1px 1px rgba(85, 66, 66, 0.45);
 }
 .hero .method {
   font-size: 1rem;
