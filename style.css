@@ -1,7 +1,7 @@
 @font-face {
   font-family: "GD Glifos";
   src: url("assets/fonts/gd-glifos.woff2") format("woff2");
-  unicode-range: U+0047;
+  unicode-range: U+0044, U+0047;
   font-display: swap;
 }
 :root {
