@@ -71,3 +71,23 @@
 .tabla th, .tabla td { padding: 0.7rem 0.8rem; border: 1px solid var(--crema); text-align: left; vertical-align: top; }
 .tabla th { color: var(--crema-viva); }
 @media (max-width: 40rem) { .lenguas { grid-template-columns: 1fr; } }
+
+/* Sello para otras webs */
+.sello-intro { max-width: 62ch; margin: 0 0 1.5rem; line-height: 1.55; }
+.sellos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: clamp(1.5rem, 3vw, 2.5rem); }
+.sello-uso { display: flex; flex-direction: column; min-width: 0; }
+.sello-uso .pieza-vista { aspect-ratio: auto; padding: 2rem 1.25rem; }
+.sello-uso .pieza-vista img { width: 251px; }
+.sello-uso h3 { margin: 0.8rem 0 0; font-size: 1.15rem; color: var(--crema-viva); }
+.sello-uso p { margin: 0.25rem 0 0; }
+.sello-uso pre {
+  margin: 0.8rem 0 0; padding: 0.8rem; overflow-x: auto; white-space: pre-wrap; word-break: break-all;
+  background: var(--barro-hondo); border-radius: 4px; font-size: 0.85rem; line-height: 1.5;
+}
+.boton-copiar {
+  align-self: flex-start; margin-top: 0.8rem; min-height: 2.75rem; padding: 0.5rem 1.2rem;
+  font: inherit; font-weight: 800; color: var(--crema); background: transparent;
+  border: 2px solid var(--crema); border-radius: 999px; cursor: pointer;
+}
+.boton-copiar:hover { background: var(--crema); color: var(--barro-hondo); }
+.copiado { min-height: 1.5em; margin: 1rem 0 0; font-weight: 700; }
