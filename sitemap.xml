@@ -44,7 +44,41 @@
 
   <url>
     <loc>https://gofiodesign.eu/proyectos.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/projekte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/projets.html"/>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gofiodesign.eu/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/projekte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/projets.html"/>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gofiodesign.eu/projekte.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/projekte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/projets.html"/>
+    <lastmod>2026-11-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://gofiodesign.eu/projets.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gofiodesign.eu/projekte.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/projets.html"/>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.8</priority>
   </url>
 
