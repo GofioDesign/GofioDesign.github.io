@@ -6,7 +6,7 @@ Los textos están convertidos a trazos: no hace falta instalar fuentes.
 - vertical-crema / -marron: pintadera encima, título debajo.
 - titulo-crema / -marron: «GOFIO DESIGN» en Poiret One con la G y la D propias.
 - monograma-gd-crema / -marron: solo el GD, sin dientes ni anillo, para tamaños por debajo de 24 px.
-- icono-app: 512x512, barro a sangre. favicon: solo el GD, marrón (crema si el navegador está en modo oscuro).
+- icono-app: 512x512, barro a sangre. favicon: solo el GD en crema sobre un cuadrado de barro.
 - og-image: imagen para compartir en redes (1200x630).
 Tintas planas, sin relieves ni sombras. Espacio libre alrededor del logotipo: al menos la banda de dientes.
 Paleta: barro #8B421E, barro hondo #59220D, crema #EFE4CF, marrón #554242, ámbar #E6B458 (solo acento).

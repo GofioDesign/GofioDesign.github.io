@@ -16,15 +16,10 @@
     <meta property="og:description" content="Logotipo pintadera, título y normas de uso de Gofio Design en SVG." />
     <meta property="og:url" content="https://gofiodesign.eu/marca.html" />
     <meta property="og:image" content="https://gofiodesign.eu/assets/brand/og-image.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poiret+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css?v=20261109p" />
+<link rel="preload" href="assets/fonts/poiret-one-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="portada.css?v=20261115d" />
+    <link rel="stylesheet" href="interior.css?v=20261115b" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
@@ -32,155 +27,168 @@
     <meta name="theme-color" content="#8b421e" />
   </head>
   <body>
-    <nav class="lang-nav">
-      <a href="index.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i> Inicio</a>
-      <a href="proyectos.html" class="nav-link">Proyectos</a>
-      <a href="marca.html" class="nav-link active" aria-current="page">Marca</a>
-      <a href="index.html">ES</a>
-      <a href="en.html">EN</a>
-      <a href="de.html">DE</a>
-      <a href="fr.html">FR</a>
-    </nav>
+    <a class="skip-link" href="#principal">Saltar al contenido</a>
 
-    <header class="hero projects-hero">
-      <a href="index.html" class="projects-mark" aria-label="Gofio Design, inicio">
-        <img src="assets/brand/logo-sello.svg" alt="" width="72" height="72" />
-      </a>
-      <h1>KIT DE MARCA</h1>
-      <p class="method">Logotipo pintadera, título y normas de uso en SVG, con los textos convertidos a trazos.</p>
-      <p><a class="projects-btn" href="assets/marca/gofio-design-kit-de-marca.zip" download>Descargar todo (.zip) <i class="fa-solid fa-download" aria-hidden="true"></i></a></p>
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Aviso de cookies">
+      <div class="contenedor">
+        <p>Utilizamos cookies para mejorar su experiencia y analizar el tráfico. Puede aceptar todas las cookies o rechazar las no esenciales. <a href="privacy.html">Más información</a>.</p>
+        <div class="cookie-actions">
+          <button type="button" class="cookie-accept" onclick="acceptCookies()">Aceptar</button>
+          <button type="button" class="cookie-reject" onclick="rejectCookies()">Rechazar</button>
+        </div>
+      </div>
+    </div>
+
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="p-cuadrado" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><rect x="6" y="6" width="108" height="108" rx="5"/><rect x="16" y="16" width="88" height="88" rx="2"/><path d="M16 104 104 16M28 104 104 28"/></g><g fill="currentColor"><circle cx="96" cy="56" r="1.9"/><circle cx="88" cy="64" r="1.9"/><circle cx="96" cy="64" r="1.9"/><circle cx="80" cy="72" r="1.9"/><circle cx="88" cy="72" r="1.9"/><circle cx="96" cy="72" r="1.9"/><circle cx="72" cy="80" r="1.9"/><circle cx="80" cy="80" r="1.9"/><circle cx="88" cy="80" r="1.9"/><circle cx="96" cy="80" r="1.9"/><circle cx="64" cy="88" r="1.9"/><circle cx="72" cy="88" r="1.9"/><circle cx="80" cy="88" r="1.9"/><circle cx="88" cy="88" r="1.9"/><circle cx="96" cy="88" r="1.9"/><circle cx="56" cy="96" r="1.9"/><circle cx="64" cy="96" r="1.9"/><circle cx="72" cy="96" r="1.9"/><circle cx="80" cy="96" r="1.9"/><circle cx="88" cy="96" r="1.9"/><circle cx="96" cy="96" r="1.9"/></g></symbol>
+      <symbol id="p-circulo" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="60" cy="60" r="54"/><circle cx="60" cy="60" r="40"/><path d="M103 60 109.5 72.3 M101.9 69.6 105.5 83 M98.7 78.7 99.2 92.6 M93.6 86.8 91 100.5 M86.8 93.6 81.2 106.4 M78.7 98.7 70.4 109.9 M69.6 101.9 59 111 M60 103 47.7 109.5 M50.4 101.9 37 105.5 M41.3 98.7 27.4 99.2 M33.2 93.6 19.5 91 M26.4 86.8 13.6 81.2 M21.3 78.7 10.1 70.4 M18.1 69.6 9 59 M17 60 10.5 47.7 M18.1 50.4 14.5 37 M21.3 41.3 20.8 27.4 M26.4 33.2 29 19.5 M33.2 26.4 38.8 13.6 M41.3 21.3 49.6 10.1 M50.4 18.1 61 9 M60 17 72.3 10.5 M69.6 18.1 83 14.5 M78.7 21.3 92.6 20.8 M86.8 26.4 100.5 29 M93.6 33.2 106.4 38.8 M98.7 41.3 109.9 49.6 M101.9 50.4 111 61"/><circle cx="60" cy="60" r="27"/><circle cx="60" cy="60" r="16"/></g><circle cx="60" cy="60" r="5" fill="currentColor"/></symbol>
+      <symbol id="p-triangulo" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-linejoin="round"><path stroke-width="2.5" d="M60 8 113 101H7Z"/><path stroke-width="2.5" d="M34 55H86L60 101Z"/><path stroke-width="1.8" stroke-linecap="round" d="M57 23H63M52.9 30H67.1M48.9 37H71.1M44.9 44H75.1M32.7 65H35.3M84.7 65H87.3M28.7 72H39.3M80.7 72H91.3M24.6 79H43.4M76.6 79H95.4M20.6 86H47.4M72.6 86H99.4M16.5 93H51.5M68.5 93H103.5"/></g></symbol>
+    </svg>
+
+    <header class="cabecera">
+      <div class="barra contenedor">
+        <a class="sello-gd" href="index.html" aria-label="Gofio Design, inicio">
+          <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.125" stroke-linejoin="round"><circle cx="60" cy="60" r="56.5"/><circle cx="60" cy="60" r="48"/><path d="M60 12 66.81 3.912 71.487 13.395 80.035 7.172 82.307 17.498 92.096 13.501 91.83 24.071 102.291 22.534 99.503 32.733 110.028 33.743 104.881 42.979 114.858 46.479 107.65 54.214 116.5 60 107.65 65.786 114.858 73.521 104.881 77.021 110.028 86.257 99.503 87.267 102.291 97.466 91.83 95.929 92.096 106.499 82.307 102.502 80.035 112.828 71.487 106.605 66.81 116.088 60 108 53.19 116.088 48.513 106.605 39.965 112.828 37.693 102.502 27.904 106.499 28.17 95.929 17.709 97.466 20.497 87.267 9.972 86.257 15.119 77.021 5.142 73.521 12.35 65.786 3.5 60 12.35 54.214 5.142 46.479 15.119 42.979 9.972 33.743 20.497 32.733 17.709 22.534 28.17 24.071 27.904 13.501 37.693 17.498 39.965 7.172 48.513 13.395 53.19 3.912 60 12"/></g><path d="M57.5 18.137A41.938 41.938 0 0 0 57.5 101.863V57.75H36.531V66.25H49V91.576A33.438 33.438 0 0 1 57.5 26.656Z" fill="currentColor"/><path d="M66.75 22.922A37.688 37.688 0 0 1 66.75 97.078Z" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linejoin="miter"/></svg>
+        </a>
+        <nav class="nav-lenguas" aria-label="Navegación">
+          <a class="volver" href="index.html">← Inicio</a>
+          <a href="index.html" hreflang="es">ES</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="en.html" hreflang="en" lang="en">EN</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="de.html" hreflang="de" lang="de">DE</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="fr.html" hreflang="fr" lang="fr">FR</a>
+        </nav>
+      </div>
+      <div class="friso" aria-hidden="true"></div>
+      <div class="frente frente-interior contenedor">
+        <h1 class="titulo">Kit de marca</h1>
+        <p class="gancho">Logotipo pintadera, título y normas de uso en SVG, con los textos convertidos a trazos.</p>
+        <p><a class="boton-descarga" href="assets/marca/gofio-design-kit-de-marca.zip" download>Descargar todo (.zip)</a></p>
+      </div>
+      <div class="friso-fino" aria-hidden="true"></div>
     </header>
 
-    <main>
-      <section class="layer">
-        <h2>Normas de uso</h2>
-        <ul class="kit-rules">
+    <main id="principal">
+      <section class="contenedor" aria-labelledby="normas">
+        <h2 id="normas">Normas de uso</h2>
+        <ul class="normas">
           <li><strong>Logotipo:</strong> una pintadera de dientes de sierra con la G y la D dentro. Es el mismo círculo partido de siempre: la D entera a la derecha y la G con su pared y su entrante a la izquierda.</li>
           <li><strong>Tintas planas:</strong> crema sobre barro (uso principal), marrón sobre crema, o ámbar solo como acento. Sin relieves, sombras ni degradados.</li>
-          <li><strong>Tamaños pequeños:</strong> por debajo de 24 px se usa solo el GD, sin dientes ni anillo. Es el favicon.</li>
+          <li><strong>Tamaños pequeños:</strong> por debajo de 24 px se usa solo el GD, sin dientes ni anillo. El favicon lo lleva en crema sobre un cuadrado de barro, para que se vea en pestañas claras y oscuras.</li>
           <li><strong>Espacio libre:</strong> alrededor del logotipo, al menos el grosor de la banda de dientes.</li>
           <li><strong>Tipografía:</strong> Poiret One con la G y la D propias para el título; Nunito para texto.</li>
           <li><strong>Accesibilidad:</strong> el crema sobre barro tiene contraste 5,8:1 y el marrón sobre crema 7,6:1, los dos por encima de WCAG AA. El ámbar no sirve para texto sobre crema.</li>
         </ul>
-        <h3>Paleta</h3>
-        <ul class="kit-palette"><li><span class="swatch" style="background:#8B421E"></span><strong>Barro</strong> <code>#8B421E</code> · fondo</li><li><span class="swatch" style="background:#59220D"></span><strong>Barro hondo</strong> <code>#59220D</code> · texto sobre ámbar</li><li><span class="swatch" style="background:#EFE4CF"></span><strong>Crema</strong> <code>#EFE4CF</code> · tinta y texto</li><li><span class="swatch" style="background:#554242"></span><strong>Marrón</strong> <code>#554242</code> · tinta sobre claro</li><li><span class="swatch" style="background:#E6B458"></span><strong>Ámbar</strong> <code>#E6B458</code> · acento y botón</li></ul>
+        <h3 class="subtitulo">Paleta</h3>
+        <ul class="paleta"><li><span class="muestra" aria-hidden="true" style="background:#8B421E"></span><strong>Barro</strong> <code>#8B421E</code> · fondo</li><li><span class="muestra" aria-hidden="true" style="background:#59220D"></span><strong>Barro hondo</strong> <code>#59220D</code> · texto sobre ámbar</li><li><span class="muestra" aria-hidden="true" style="background:#EFE4CF"></span><strong>Crema</strong> <code>#EFE4CF</code> · tinta y texto</li><li><span class="muestra" aria-hidden="true" style="background:#554242"></span><strong>Marrón</strong> <code>#554242</code> · tinta sobre claro</li><li><span class="muestra" aria-hidden="true" style="background:#E6B458"></span><strong>Ámbar</strong> <code>#E6B458</code> · acento y botón</li></ul>
       </section>
-      <section class="layer projects" aria-labelledby="archivos">
+
+      <div class="friso-fino" aria-hidden="true"></div>
+
+      <section class="contenedor" aria-labelledby="archivos">
         <h2 id="archivos">Archivos</h2>
-        <div class="projects-grid">
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#8B421E"><img src="assets/marca/logotipo-crema.svg" alt="Logotipo crema" loading="lazy" /></div>
+        <div class="piezas">
+          <article class="pieza">
+            <div class="pieza-vista"><img src="assets/marca/logotipo-crema.svg" alt="" loading="lazy" /></div>
             <h3>Logotipo crema</h3>
             <p>Uso principal, sobre barro</p>
-            <a class="project-link" href="assets/marca/logotipo-crema.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/logotipo-crema.svg" download>Descargar SVG<span class="solo-lector">: Logotipo crema</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/logotipo-marron.svg" alt="Logotipo marrón" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/logotipo-marron.svg" alt="" loading="lazy" /></div>
             <h3>Logotipo marrón</h3>
             <p>Sobre fondos claros; impresión a una tinta</p>
-            <a class="project-link" href="assets/marca/logotipo-marron.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/logotipo-marron.svg" download>Descargar SVG<span class="solo-lector">: Logotipo marrón</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#8B421E"><img src="assets/marca/logotipo-ambar.svg" alt="Logotipo ámbar" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista"><img src="assets/marca/logotipo-ambar.svg" alt="" loading="lazy" /></div>
             <h3>Logotipo ámbar</h3>
             <p>Solo como acento, nunca para texto</p>
-            <a class="project-link" href="assets/marca/logotipo-ambar.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/logotipo-ambar.svg" download>Descargar SVG<span class="solo-lector">: Logotipo ámbar</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#8B421E"><img src="assets/marca/horizontal-crema.svg" alt="Horizontal crema" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista"><img src="assets/marca/horizontal-crema.svg" alt="" loading="lazy" /></div>
             <h3>Horizontal crema</h3>
             <p>Pintadera y título en línea</p>
-            <a class="project-link" href="assets/marca/horizontal-crema.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/horizontal-crema.svg" download>Descargar SVG<span class="solo-lector">: Horizontal crema</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/horizontal-marron.svg" alt="Horizontal marrón" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/horizontal-marron.svg" alt="" loading="lazy" /></div>
             <h3>Horizontal marrón</h3>
             <p>Pintadera y título en línea</p>
-            <a class="project-link" href="assets/marca/horizontal-marron.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/horizontal-marron.svg" download>Descargar SVG<span class="solo-lector">: Horizontal marrón</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#8B421E"><img src="assets/marca/vertical-crema.svg" alt="Vertical crema" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista"><img src="assets/marca/vertical-crema.svg" alt="" loading="lazy" /></div>
             <h3>Vertical crema</h3>
             <p>Pintadera encima, título debajo</p>
-            <a class="project-link" href="assets/marca/vertical-crema.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/vertical-crema.svg" download>Descargar SVG<span class="solo-lector">: Vertical crema</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/vertical-marron.svg" alt="Vertical marrón" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/vertical-marron.svg" alt="" loading="lazy" /></div>
             <h3>Vertical marrón</h3>
             <p>Pintadera encima, título debajo</p>
-            <a class="project-link" href="assets/marca/vertical-marron.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/vertical-marron.svg" download>Descargar SVG<span class="solo-lector">: Vertical marrón</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#8B421E"><img src="assets/marca/titulo-crema.svg" alt="Título crema" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista"><img src="assets/marca/titulo-crema.svg" alt="" loading="lazy" /></div>
             <h3>Título crema</h3>
             <p>«GOFIO DESIGN» sobre barro</p>
-            <a class="project-link" href="assets/marca/titulo-crema.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/titulo-crema.svg" download>Descargar SVG<span class="solo-lector">: Título crema</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/titulo-marron.svg" alt="Título marrón" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/titulo-marron.svg" alt="" loading="lazy" /></div>
             <h3>Título marrón</h3>
             <p>«GOFIO DESIGN» sobre claro</p>
-            <a class="project-link" href="assets/marca/titulo-marron.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/titulo-marron.svg" download>Descargar SVG<span class="solo-lector">: Título marrón</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#8B421E"><img src="assets/marca/monograma-gd-crema.svg" alt="GD crema" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista"><img src="assets/marca/monograma-gd-crema.svg" alt="" loading="lazy" /></div>
             <h3>GD crema</h3>
             <p>Solo las letras, para tamaños pequeños</p>
-            <a class="project-link" href="assets/marca/monograma-gd-crema.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/monograma-gd-crema.svg" download>Descargar SVG<span class="solo-lector">: GD crema</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/monograma-gd-marron.svg" alt="GD marrón" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/monograma-gd-marron.svg" alt="" loading="lazy" /></div>
             <h3>GD marrón</h3>
             <p>Solo las letras, para tamaños pequeños</p>
-            <a class="project-link" href="assets/marca/monograma-gd-marron.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/monograma-gd-marron.svg" download>Descargar SVG<span class="solo-lector">: GD marrón</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/icono-app.svg" alt="Icono de app" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/icono-app.svg" alt="" loading="lazy" /></div>
             <h3>Icono de app</h3>
             <p>512 × 512, barro a sangre</p>
-            <a class="project-link" href="assets/marca/icono-app.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/icono-app.svg" download>Descargar SVG<span class="solo-lector">: Icono de app</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/favicon.svg" alt="Favicon" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/favicon.svg" alt="" loading="lazy" /></div>
             <h3>Favicon</h3>
-            <p>Solo el GD; crema en modo oscuro</p>
-            <a class="project-link" href="assets/marca/favicon.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p>Solo el GD, crema sobre barro</p>
+            <p class="ficha-enlace"><a href="assets/marca/favicon.svg" download>Descargar SVG<span class="solo-lector">: Favicon</span></a></p>
           </article>
-          <article class="kit-item">
-            <div class="kit-preview" style="background:#EFE4CF"><img src="assets/marca/og-image.svg" alt="Imagen para redes" loading="lazy" /></div>
+          <article class="pieza">
+            <div class="pieza-vista pieza-clara"><img src="assets/marca/og-image.svg" alt="" loading="lazy" /></div>
             <h3>Imagen para redes</h3>
             <p>1200 × 630</p>
-            <a class="project-link" href="assets/marca/og-image.svg" download>Descargar SVG <i class="fa-solid fa-download" aria-hidden="true"></i></a>
+            <p class="ficha-enlace"><a href="assets/marca/og-image.svg" download>Descargar SVG<span class="solo-lector">: Imagen para redes</span></a></p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer>
-      <img class="footer-mark" src="assets/brand/logo-sello-oscuro.svg" alt="" width="44" height="44" />
+    <div class="friso" aria-hidden="true"></div>
+    <footer class="pie">
+      <svg class="sello-pie" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.125" stroke-linejoin="round"><circle cx="60" cy="60" r="56.5"/><circle cx="60" cy="60" r="48"/><path d="M60 12 66.81 3.912 71.487 13.395 80.035 7.172 82.307 17.498 92.096 13.501 91.83 24.071 102.291 22.534 99.503 32.733 110.028 33.743 104.881 42.979 114.858 46.479 107.65 54.214 116.5 60 107.65 65.786 114.858 73.521 104.881 77.021 110.028 86.257 99.503 87.267 102.291 97.466 91.83 95.929 92.096 106.499 82.307 102.502 80.035 112.828 71.487 106.605 66.81 116.088 60 108 53.19 116.088 48.513 106.605 39.965 112.828 37.693 102.502 27.904 106.499 28.17 95.929 17.709 97.466 20.497 87.267 9.972 86.257 15.119 77.021 5.142 73.521 12.35 65.786 3.5 60 12.35 54.214 5.142 46.479 15.119 42.979 9.972 33.743 20.497 32.733 17.709 22.534 28.17 24.071 27.904 13.501 37.693 17.498 39.965 7.172 48.513 13.395 53.19 3.912 60 12"/></g><path d="M57.5 18.137A41.938 41.938 0 0 0 57.5 101.863V57.75H36.531V66.25H49V91.576A33.438 33.438 0 0 1 57.5 26.656Z" fill="currentColor"/><path d="M66.75 22.922A37.688 37.688 0 0 1 66.75 97.078Z" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linejoin="miter"/></svg>
       <p>
         &copy; 2005–<span id="current-year">2026</span>
         <strong>Gofio Design</strong> |
-        <a href="privacy.html" class="footer-legal">Legal & Privacy</a> | <a href="marca.html" class="footer-legal">Kit de marca</a>
+        <a href="privacy.html">Legal y privacidad</a>
+        | <a href="marca.html">Kit de marca</a>
       </p>
       <div id="email-placeholder"></div>
     </footer>
-    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Aviso de cookies">
-      <p>
-        Utilizamos cookies para mejorar su experiencia y analizar el tráfico.
-        Puede aceptar todas las cookies o rechazar las no esenciales.
-        <a href="privacy.html">Más información</a
-        >.
-      </p>
-      <div class="cookie-actions">
-        <button type="button" class="cookie-accept" onclick="acceptCookies()">
-          Aceptar
-        </button>
-        <button type="button" class="cookie-reject" onclick="rejectCookies()">
-          Rechazar
-        </button>
-      </div>
-    </div>
 
     <script src="script.js"></script>
     <noscript
