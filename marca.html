@@ -6,7 +6,7 @@
     <title>Kit de marca | Gofio Design</title>
     <meta
       name="description"
-      content="Kit de marca de Gofio Design: logotipo pintadera, título y versiones horizontal y vertical en SVG, con normas de uso."
+      content="Kit de marca de Gofio Design: logotipo pintadera, título, sello «Un proyecto Gofio Design» para otras webs y normas de uso en SVG."
     />
     <link rel="canonical" href="https://gofiodesign.eu/marca.html" />
     <meta property="og:type" content="website" />
@@ -19,7 +19,7 @@
 <link rel="preload" href="assets/fonts/poiret-one-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="portada.css?v=20261115d" />
-    <link rel="stylesheet" href="interior.css?v=20261115b" />
+    <link rel="stylesheet" href="interior.css?v=20261115c" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
@@ -83,6 +83,32 @@
         </ul>
         <h3 class="subtitulo">Paleta</h3>
         <ul class="paleta"><li><span class="muestra" aria-hidden="true" style="background:#8B421E"></span><strong>Barro</strong> <code>#8B421E</code> · fondo</li><li><span class="muestra" aria-hidden="true" style="background:#59220D"></span><strong>Barro hondo</strong> <code>#59220D</code> · texto sobre ámbar</li><li><span class="muestra" aria-hidden="true" style="background:#EFE4CF"></span><strong>Crema</strong> <code>#EFE4CF</code> · tinta y texto</li><li><span class="muestra" aria-hidden="true" style="background:#554242"></span><strong>Marrón</strong> <code>#554242</code> · tinta sobre claro</li><li><span class="muestra" aria-hidden="true" style="background:#E6B458"></span><strong>Ámbar</strong> <code>#E6B458</code> · acento y botón</li></ul>
+      </section>
+
+      <div class="friso-fino" aria-hidden="true"></div>
+
+      <div class="friso-fino" aria-hidden="true"></div>
+
+      <section class="contenedor" aria-labelledby="sello">
+        <h2 id="sello">Sello para otras webs</h2>
+        <p class="sello-intro">Para el pie de las webs que hacemos. La imagen se sirve desde gofiodesign.eu, así que cuando cambie la marca se actualiza sola en todas. Pega el código tal cual; se ve bien a partir de 200 px de ancho.</p>
+        <div class="sellos">
+          <article class="sello-uso">
+            <div class="pieza-vista pieza-clara"><img src="assets/sello/un-proyecto-gofio-design-claro.svg" alt="" width="251" height="64" /></div>
+            <h3>Sello claro</h3>
+            <p>Para pies claros: marrón sobre crema.</p>
+            <pre><code id="codigo-claro">&lt;a href=&quot;https://gofiodesign.eu/&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://gofiodesign.eu/assets/sello/un-proyecto-gofio-design-claro.svg&quot; alt=&quot;Un proyecto Gofio Design&quot; width=&quot;251&quot; height=&quot;64&quot; /&gt;&lt;/a&gt;</code></pre>
+            <button type="button" class="boton-copiar" data-copia="codigo-claro">Copiar código<span class="solo-lector">: Sello claro</span></button>
+          </article>
+          <article class="sello-uso">
+            <div class="pieza-vista"><img src="assets/sello/un-proyecto-gofio-design-oscuro.svg" alt="" width="251" height="64" /></div>
+            <h3>Sello oscuro</h3>
+            <p>Para pies oscuros: crema sobre barro.</p>
+            <pre><code id="codigo-oscuro">&lt;a href=&quot;https://gofiodesign.eu/&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://gofiodesign.eu/assets/sello/un-proyecto-gofio-design-oscuro.svg&quot; alt=&quot;Un proyecto Gofio Design&quot; width=&quot;251&quot; height=&quot;64&quot; /&gt;&lt;/a&gt;</code></pre>
+            <button type="button" class="boton-copiar" data-copia="codigo-oscuro">Copiar código<span class="solo-lector">: Sello oscuro</span></button>
+          </article>
+        </div>
+        <p class="copiado" role="status" aria-live="polite"></p>
       </section>
 
       <div class="friso-fino" aria-hidden="true"></div>
@@ -191,6 +217,16 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      document.querySelectorAll(".boton-copiar").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var t = document.getElementById(b.dataset.copia).textContent;
+          var aviso = document.querySelector(".copiado");
+          navigator.clipboard.writeText(t).then(function () { aviso.textContent = "Código copiado."; },
+            function () { aviso.textContent = "No se pudo copiar; selecciona el código a mano."; });
+        });
+      });
+    </script>
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-55DKZ9C5"
