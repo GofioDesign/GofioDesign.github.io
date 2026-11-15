@@ -1,0 +1,19 @@
+# Documentos personales que no deben publicarse en GitHub Pages
+Profile.pdf
+
+# Configuración local de herramientas de agente (copias para Codex / OpenCode)
+.agents/
+.codex/
+.opencode/
+.claude/settings.local.json
+
+# Binarios descargados por la skill de Impeccable (se reinstalan con npx impeccable install)
+.claude/skills/*/scripts/bin/
+
+# Directorios de ejecución de Impeccable (los de trabajo se ignoran solos; config.local es por máquina)
+.impeccable/config.local.json
+
+# Salidas de trabajo de Impeccable que se regeneran (comparaciones, inspecciones, recortes de depuración)
+.impeccable/build/tests/
+.impeccable/build/map-inspections/
+.impeccable/review/diff/

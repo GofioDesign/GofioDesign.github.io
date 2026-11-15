@@ -1,0 +1,350 @@
+{
+  "regions": [
+    {
+      "id": "clay-ground",
+      "kind": "texture",
+      "pixelBox": {
+        "x": 620,
+        "y": 105,
+        "w": 150,
+        "h": 95
+      },
+      "note": "clean sample of the burnished brown clay ground with faint firing clouds, no ink; the page tiles it as the body background"
+    },
+    {
+      "id": "frieze-top",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 0,
+        "y": 0,
+        "w": 1536,
+        "h": 90
+      },
+      "bleed": true,
+      "note": "top pintadera frieze band stamped into the clay: triangles, zigzags, concentric circles, with a stamped band at its lower edge; runs the full width behind the GD seal and the navigation"
+    },
+    {
+      "id": "gd-seal",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 36,
+        "y": 6,
+        "w": 102,
+        "h": 92
+      },
+      "note": "the GD monogram pressed as a round amber clay seal in relief, sitting on the top frieze"
+    },
+    {
+      "id": "nav-links",
+      "kind": "control",
+      "pixelBox": {
+        "x": 1160,
+        "y": 36,
+        "w": 360,
+        "h": 34
+      },
+      "note": "navigation links in cream Nunito: Proyectos · ES · EN · DE · FR separated by dots"
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "pixelBox": {
+        "x": 50,
+        "y": 122,
+        "w": 500,
+        "h": 74
+      },
+      "note": "GOFIO DESIGN in thin cream Poiret One capitals, the page headline"
+    },
+    {
+      "id": "hook",
+      "kind": "text",
+      "pixelBox": {
+        "x": 52,
+        "y": 206,
+        "w": 380,
+        "h": 92
+      },
+      "note": "three-line cream Nunito hook: Estudio en Tenerife desde 2005. Webs, redes, jardines y patrimonio, hechos para durar."
+    },
+    {
+      "id": "whatsapp-seal-plate",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 1198,
+        "y": 122,
+        "w": 296,
+        "h": 76
+      },
+      "note": "the primary action as a pressed amber clay seal: a pill with raised rim, soft relief and darker pressed shadow; no text, the label sits on top as its own control"
+    },
+    {
+      "id": "whatsapp-seal",
+      "kind": "control",
+      "pixelBox": {
+        "x": 1222,
+        "y": 142,
+        "w": 258,
+        "h": 38
+      },
+      "note": "label of the primary action on the amber seal: WhatsApp glyph and cream Nunito text Escríbenos por WhatsApp"
+    },
+    {
+      "id": "scene-island",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 0,
+        "y": 198,
+        "w": 1536,
+        "h": 310
+      },
+      "bleed": true,
+      "note": "incised line illustration across the full width, the island from coast to summit: fishermen hauling a boat on the shore, goatherds with goats, a tagoror of seated elders, a person planting among a lizard and a bird, a hiker fixing a signpost, two people running a cable uphill to an old Canarian house with wooden balcony, one on the roof fitting a satellite dish, a person seated with a laptop, the Teide as a line behind; plain clay sky above the horizon under the headline"
+    },
+    {
+      "id": "frieze-mid-top",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 0,
+        "y": 508,
+        "w": 1536,
+        "h": 46
+      },
+      "bleed": true,
+      "note": "narrow pintadera frieze band of triangles and zigzags between the scene and the three layers"
+    },
+    {
+      "id": "medallion-identidad",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 92,
+        "y": 560,
+        "w": 100,
+        "h": 100
+      },
+      "note": "stamped round pintadera medallion with concentric circles, in relief on the clay"
+    },
+    {
+      "id": "label-identidad",
+      "kind": "text",
+      "pixelBox": {
+        "x": 212,
+        "y": 582,
+        "w": 268,
+        "h": 62
+      },
+      "note": "two-line cream Nunito label: Identidad e infraestructura digital"
+    },
+    {
+      "id": "divider-1",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 524,
+        "y": 560,
+        "w": 26,
+        "h": 100
+      },
+      "note": "small vertical column of stamped triangles separating the first and second layer"
+    },
+    {
+      "id": "medallion-paisaje",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 596,
+        "y": 560,
+        "w": 100,
+        "h": 100
+      },
+      "note": "stamped round pintadera medallion with a triangle-within-triangle pattern, in relief on the clay"
+    },
+    {
+      "id": "label-paisaje",
+      "kind": "text",
+      "pixelBox": {
+        "x": 710,
+        "y": 582,
+        "w": 210,
+        "h": 62
+      },
+      "note": "two-line cream Nunito label: Paisaje y territorio canario"
+    },
+    {
+      "id": "divider-2",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 984,
+        "y": 560,
+        "w": 26,
+        "h": 100
+      },
+      "note": "small vertical column of stamped triangles separating the second and third layer"
+    },
+    {
+      "id": "medallion-gestion",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 1082,
+        "y": 560,
+        "w": 100,
+        "h": 100
+      },
+      "note": "stamped round pintadera medallion with a zigzag pattern, in relief on the clay"
+    },
+    {
+      "id": "label-gestion",
+      "kind": "text",
+      "pixelBox": {
+        "x": 1198,
+        "y": 582,
+        "w": 250,
+        "h": 62
+      },
+      "note": "two-line cream Nunito label: Gestión de activos y dinamización"
+    },
+    {
+      "id": "frieze-mid-bottom",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 0,
+        "y": 662,
+        "w": 1536,
+        "h": 46
+      },
+      "bleed": true,
+      "note": "narrow pintadera frieze band of triangles and zigzags closing the three-layer band"
+    },
+    {
+      "id": "heading-proyectos",
+      "kind": "text",
+      "pixelBox": {
+        "x": 52,
+        "y": 718,
+        "w": 300,
+        "h": 44
+      },
+      "note": "section heading Proyectos reales in thin cream Poiret One"
+    },
+    {
+      "id": "ornament-proyectos",
+      "kind": "plate",
+      "pixelBox": {
+        "x": 54,
+        "y": 764,
+        "w": 36,
+        "h": 16
+      },
+      "note": "tiny stamped zigzag mark under the section heading"
+    },
+    {
+      "id": "tile-terapia",
+      "kind": "chrome",
+      "container": true,
+      "pixelBox": {
+        "x": 58,
+        "y": 784,
+        "w": 464,
+        "h": 240
+      },
+      "bleed": true,
+      "note": "raised clay tile with rounded corners and soft inset edge holding a project screenshot and its caption"
+    },
+    {
+      "id": "shot-terapia",
+      "kind": "image",
+      "parentId": "tile-terapia",
+      "pixelBox": {
+        "x": 72,
+        "y": 798,
+        "w": 436,
+        "h": 182
+      },
+      "note": "screenshot of the Mi Terapia Regresiva website inlaid in the tile; the user chose this project for the first tile and approved the real capture from assets/projects over the comp's invented Dharma screenshot"
+    },
+    {
+      "id": "caption-terapia",
+      "kind": "text",
+      "parentId": "tile-terapia",
+      "pixelBox": {
+        "x": 80,
+        "y": 982,
+        "w": 240,
+        "h": 28
+      },
+      "note": "cream Nunito caption: Mi Terapia Regresiva (the comp reads Clínica Dental Dharma; the user chose Mi Terapia Regresiva)"
+    },
+    {
+      "id": "tile-archipielago",
+      "kind": "chrome",
+      "container": true,
+      "pixelBox": {
+        "x": 540,
+        "y": 784,
+        "w": 456,
+        "h": 240
+      },
+      "bleed": true,
+      "note": "raised clay tile with rounded corners and soft inset edge holding a project screenshot and its caption"
+    },
+    {
+      "id": "shot-archipielago",
+      "kind": "image",
+      "parentId": "tile-archipielago",
+      "pixelBox": {
+        "x": 554,
+        "y": 798,
+        "w": 428,
+        "h": 182
+      },
+      "note": "screenshot of the Archipiélago Vivo website inlaid in the tile; the real capture from assets/projects replaces the comp's invented one"
+    },
+    {
+      "id": "caption-archipielago",
+      "kind": "text",
+      "parentId": "tile-archipielago",
+      "pixelBox": {
+        "x": 562,
+        "y": 982,
+        "w": 190,
+        "h": 28
+      },
+      "note": "cream Nunito caption: Archipiélago Vivo"
+    },
+    {
+      "id": "tile-diezclaves",
+      "kind": "chrome",
+      "container": true,
+      "pixelBox": {
+        "x": 1016,
+        "y": 784,
+        "w": 464,
+        "h": 240
+      },
+      "bleed": true,
+      "note": "raised clay tile with rounded corners and soft inset edge holding a project screenshot and its caption"
+    },
+    {
+      "id": "shot-diezclaves",
+      "kind": "image",
+      "parentId": "tile-diezclaves",
+      "pixelBox": {
+        "x": 1032,
+        "y": 798,
+        "w": 436,
+        "h": 182
+      },
+      "note": "screenshot of the Diez Claves website inlaid in the tile; the real capture from assets/projects replaces the comp's invented one"
+    },
+    {
+      "id": "caption-diezclaves",
+      "kind": "text",
+      "parentId": "tile-diezclaves",
+      "pixelBox": {
+        "x": 1040,
+        "y": 982,
+        "w": 140,
+        "h": 28
+      },
+      "note": "cream Nunito caption: Diez Claves"
+    }
+  ]
+}

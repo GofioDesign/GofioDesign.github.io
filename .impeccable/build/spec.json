@@ -1,0 +1,1826 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-11-14T06:39:05.939Z",
+  "comp": ".impeccable/mocks/ganigo-friso.png",
+  "warnings": [
+    "region frieze-top: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region scene-island: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region frieze-mid-top: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region frieze-mid-bottom: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region tile-terapia: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region tile-terapia: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region tile-archipielago: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region tile-archipielago: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region tile-diezclaves: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)",
+    "region tile-diezclaves: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [
+    "B7",
+    "D8"
+  ],
+  "compSize": {
+    "width": 1536,
+    "height": 1024
+  },
+  "aspect": 1.5,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#8b421e",
+      "coverage": 0.8069
+    },
+    {
+      "hex": "#59220d",
+      "coverage": 0.0599
+    },
+    {
+      "hex": "#f7ede9",
+      "coverage": 0.0565
+    },
+    {
+      "hex": "#b86d3e",
+      "coverage": 0.0505
+    },
+    {
+      "hex": "#083646",
+      "coverage": 0.0261
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0824,
+      "strength": 0.2503
+    },
+    {
+      "y": 0.6235,
+      "strength": 0.2053
+    },
+    {
+      "y": 0.7647,
+      "strength": 0.2055
+    },
+    {
+      "y": 0.7882,
+      "strength": 1
+    },
+    {
+      "y": 0.9529,
+      "strength": 0.7845
+    }
+  ],
+  "regions": [
+    {
+      "id": "clay-ground",
+      "kind": "texture",
+      "note": "clean sample of the burnished brown clay ground with faint firing clouds, no ink; the page tiles it as the body background",
+      "grid": null,
+      "box": {
+        "x": 0.4036,
+        "y": 0.1025,
+        "w": 0.0977,
+        "h": 0.0928
+      },
+      "px": {
+        "x": 620,
+        "y": 105,
+        "w": 150,
+        "h": 95
+      },
+      "aspect": 1.5789,
+      "palette": [
+        {
+          "hex": "#8e401d",
+          "coverage": 0.9981
+        },
+        {
+          "hex": "#682818",
+          "coverage": 0.0012
+        },
+        {
+          "hex": "#a86838",
+          "coverage": 0.0006
+        }
+      ],
+      "detail": {
+        "energy": 7.8193
+      },
+      "medium": "raster",
+      "plate": "assets/plates/clay-ground.png",
+      "text": null
+    },
+    {
+      "id": "frieze-top",
+      "kind": "plate",
+      "note": "top pintadera frieze band stamped into the clay: triangles, zigzags, concentric circles, with a stamped band at its lower edge; runs the full width behind the GD seal and the navigation",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.0879
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1536,
+        "h": 90
+      },
+      "aspect": 17.0667,
+      "palette": [
+        {
+          "hex": "#823a1a",
+          "coverage": 0.6864
+        },
+        {
+          "hex": "#a85e31",
+          "coverage": 0.1999
+        },
+        {
+          "hex": "#59220d",
+          "coverage": 0.0901
+        },
+        {
+          "hex": "#cb8458",
+          "coverage": 0.0154
+        },
+        {
+          "hex": "#b35e0f",
+          "coverage": 0.0081
+        }
+      ],
+      "detail": {
+        "energy": 29.5775
+      },
+      "medium": "raster",
+      "plate": "assets/plates/frieze-top.png",
+      "text": null
+    },
+    {
+      "id": "gd-seal",
+      "kind": "plate",
+      "note": "the GD monogram pressed as a round amber clay seal in relief, sitting on the top frieze",
+      "grid": null,
+      "box": {
+        "x": 0.0234,
+        "y": 0.0059,
+        "w": 0.0664,
+        "h": 0.0898
+      },
+      "px": {
+        "x": 36,
+        "y": 6,
+        "w": 102,
+        "h": 92
+      },
+      "aspect": 1.1087,
+      "palette": [
+        {
+          "hex": "#783614",
+          "coverage": 0.6641
+        },
+        {
+          "hex": "#a4550e",
+          "coverage": 0.2217
+        },
+        {
+          "hex": "#d18637",
+          "coverage": 0.0432
+        },
+        {
+          "hex": "#aa613a",
+          "coverage": 0.0384
+        },
+        {
+          "hex": "#511808",
+          "coverage": 0.0326
+        }
+      ],
+      "detail": {
+        "energy": 12.1384
+      },
+      "medium": "raster",
+      "plate": "assets/plates/gd-seal.png",
+      "text": null
+    },
+    {
+      "id": "nav-links",
+      "kind": "control",
+      "note": "navigation links in cream Nunito: Proyectos · ES · EN · DE · FR separated by dots",
+      "grid": null,
+      "box": {
+        "x": 0.7552,
+        "y": 0.0352,
+        "w": 0.2344,
+        "h": 0.0332
+      },
+      "px": {
+        "x": 1160,
+        "y": 36,
+        "w": 360,
+        "h": 34
+      },
+      "aspect": 10.5882,
+      "palette": [
+        {
+          "hex": "#7d3718",
+          "coverage": 0.9129
+        },
+        {
+          "hex": "#f7eddf",
+          "coverage": 0.0397
+        },
+        {
+          "hex": "#d9bea6",
+          "coverage": 0.0202
+        },
+        {
+          "hex": "#b2876a",
+          "coverage": 0.0181
+        },
+        {
+          "hex": "#96614a",
+          "coverage": 0.0091
+        }
+      ],
+      "detail": {
+        "energy": 33.9448
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 22,
+          "capHeightPx": 14.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6201,
+          "advTall": 0.6201,
+          "advX": 0.5857,
+          "gap": 0.1378,
+          "xRatio": 0.6833,
+          "stemW": 0.1491,
+          "contrast": 1.1011,
+          "serif": 1.5491,
+          "densTall": 0.4447,
+          "densX": 0.4881,
+          "weight": 0.4447
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "note": "GOFIO DESIGN in thin cream Poiret One capitals, the page headline",
+      "grid": null,
+      "box": {
+        "x": 0.0326,
+        "y": 0.1191,
+        "w": 0.3255,
+        "h": 0.0723
+      },
+      "px": {
+        "x": 50,
+        "y": 122,
+        "w": 500,
+        "h": 74
+      },
+      "aspect": 6.7568,
+      "palette": [
+        {
+          "hex": "#833b1c",
+          "coverage": 0.8667
+        },
+        {
+          "hex": "#f8f0d9",
+          "coverage": 0.0716
+        },
+        {
+          "hex": "#e8c8ad",
+          "coverage": 0.0241
+        },
+        {
+          "hex": "#9e6b4c",
+          "coverage": 0.021
+        },
+        {
+          "hex": "#c69a7c",
+          "coverage": 0.0166
+        }
+      ],
+      "detail": {
+        "energy": 53.0192
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 9,
+          "capHeightPx": 59.4,
+          "inkIsDark": false,
+          "allCaps": true,
+          "advance": 0.5392,
+          "advTall": 0.5392,
+          "advX": null,
+          "gap": 0.1853,
+          "xRatio": null,
+          "stemW": 0.0535,
+          "contrast": 0.9664,
+          "serif": 1.0008,
+          "densTall": 0.209,
+          "densX": null,
+          "weight": 0.209
+        },
+        "widthClass": "condensed",
+        "weightClass": "light",
+        "chosen": {
+          "family": "Poiret One",
+          "weight": 400,
+          "fontSizePx": 80,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 9,
+            "capHeightPx": 60,
+            "inkIsDark": true,
+            "allCaps": true,
+            "advance": 0.5667,
+            "advTall": 0.5667,
+            "advX": null,
+            "gap": 0.15,
+            "xRatio": null,
+            "stemW": 0.047,
+            "contrast": 1.0342,
+            "serif": 1,
+            "densTall": 0.1454,
+            "densX": null,
+            "weight": 0.1454
+          },
+          "stamp": "44c259d7a714"
+        }
+      }
+    },
+    {
+      "id": "hook",
+      "kind": "text",
+      "note": "three-line cream Nunito hook: Estudio en Tenerife desde 2005. Webs, redes, jardines y patrimonio, hechos para durar.",
+      "grid": null,
+      "box": {
+        "x": 0.0339,
+        "y": 0.2012,
+        "w": 0.2474,
+        "h": 0.0898
+      },
+      "px": {
+        "x": 52,
+        "y": 206,
+        "w": 380,
+        "h": 92
+      },
+      "aspect": 4.1304,
+      "palette": [
+        {
+          "hex": "#88401e",
+          "coverage": 0.8585
+        },
+        {
+          "hex": "#f6efe0",
+          "coverage": 0.0614
+        },
+        {
+          "hex": "#d5b095",
+          "coverage": 0.0407
+        },
+        {
+          "hex": "#a27050",
+          "coverage": 0.0364
+        },
+        {
+          "hex": "#ebd1b1",
+          "coverage": 0.0031
+        }
+      ],
+      "detail": {
+        "energy": 50.3856
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 3,
+          "glyphs": 66,
+          "capHeightPx": 17,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5858,
+          "advTall": 0.6427,
+          "advX": 0.5843,
+          "gap": 0.1478,
+          "xRatio": 0.6844,
+          "stemW": 0.1343,
+          "contrast": 1.1282,
+          "serif": 0.8788,
+          "densTall": 0.411,
+          "densX": 0.4916,
+          "weight": 0.411
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular",
+        "chosen": {
+          "family": "Nunito",
+          "weight": 400,
+          "fontSizePx": 24,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 24,
+            "capHeightPx": 17.1,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.6419,
+            "advTall": 0.6419,
+            "advX": 0.6273,
+            "gap": 0.1459,
+            "xRatio": 0.6928,
+            "stemW": 0.1396,
+            "contrast": 1.1184,
+            "serif": 0.757,
+            "densTall": 0.4438,
+            "densX": 0.503,
+            "weight": 0.4438
+          },
+          "stamp": "c36f7326f1e8"
+        }
+      }
+    },
+    {
+      "id": "whatsapp-seal-plate",
+      "kind": "plate",
+      "note": "the primary action as a pressed amber clay seal: a pill with raised rim, soft relief and darker pressed shadow; no text, the label sits on top as its own control",
+      "grid": null,
+      "box": {
+        "x": 0.7799,
+        "y": 0.1191,
+        "w": 0.1927,
+        "h": 0.0742
+      },
+      "px": {
+        "x": 1198,
+        "y": 122,
+        "w": 296,
+        "h": 76
+      },
+      "aspect": 3.8947,
+      "palette": [
+        {
+          "hex": "#a54e0a",
+          "coverage": 0.6082
+        },
+        {
+          "hex": "#823c13",
+          "coverage": 0.2693
+        },
+        {
+          "hex": "#491c09",
+          "coverage": 0.0521
+        },
+        {
+          "hex": "#cc813d",
+          "coverage": 0.0403
+        },
+        {
+          "hex": "#f6f0e3",
+          "coverage": 0.0301
+        }
+      ],
+      "detail": {
+        "energy": 33.6827
+      },
+      "medium": "raster",
+      "plate": "assets/plates/whatsapp-seal-plate.png",
+      "text": null
+    },
+    {
+      "id": "whatsapp-seal",
+      "kind": "control",
+      "note": "label of the primary action on the amber seal: WhatsApp glyph and cream Nunito text Escríbenos por WhatsApp",
+      "grid": null,
+      "box": {
+        "x": 0.7956,
+        "y": 0.1387,
+        "w": 0.168,
+        "h": 0.0371
+      },
+      "px": {
+        "x": 1222,
+        "y": 142,
+        "w": 258,
+        "h": 38
+      },
+      "aspect": 6.7895,
+      "palette": [
+        {
+          "hex": "#9d4808",
+          "coverage": 0.8355
+        },
+        {
+          "hex": "#aa6e37",
+          "coverage": 0.0542
+        },
+        {
+          "hex": "#f8f3e6",
+          "coverage": 0.046
+        },
+        {
+          "hex": "#c89f79",
+          "coverage": 0.0349
+        },
+        {
+          "hex": "#72340a",
+          "coverage": 0.0294
+        }
+      ],
+      "detail": {
+        "energy": 46.7165
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": true,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 23,
+          "capHeightPx": 22.9,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.3275,
+          "advTall": 0.7204,
+          "advX": 0.3275,
+          "gap": 0.0655,
+          "xRatio": 0.3843,
+          "stemW": 0.0901,
+          "contrast": 1,
+          "serif": 1.0759,
+          "densTall": 0.3174,
+          "densX": 0.5635,
+          "weight": 0.3174
+        },
+        "widthClass": "compressed",
+        "weightClass": "light"
+      }
+    },
+    {
+      "id": "scene-island",
+      "kind": "plate",
+      "note": "incised line illustration across the full width, the island from coast to summit: fishermen hauling a boat on the shore, goatherds with goats, a tagoror of seated elders, a person planting among a lizard and a bird, a hiker fixing a signpost, two people running a cable uphill to an old Canarian house with wooden balcony, one on the roof fitting a satellite dish, a person seated with a laptop, the Teide as a line behind; plain clay sky above the horizon under the headline",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0.1934,
+        "w": 1,
+        "h": 0.3027
+      },
+      "px": {
+        "x": 0,
+        "y": 198,
+        "w": 1536,
+        "h": 310
+      },
+      "aspect": 4.9548,
+      "palette": [
+        {
+          "hex": "#994d26",
+          "coverage": 0.826
+        },
+        {
+          "hex": "#58210b",
+          "coverage": 0.1008
+        },
+        {
+          "hex": "#c07544",
+          "coverage": 0.0403
+        },
+        {
+          "hex": "#380b08",
+          "coverage": 0.0222
+        },
+        {
+          "hex": "#7c2d12",
+          "coverage": 0.0107
+        }
+      ],
+      "detail": {
+        "energy": 19.198
+      },
+      "medium": "raster",
+      "plate": "assets/plates/scene-island.png",
+      "text": null
+    },
+    {
+      "id": "frieze-mid-top",
+      "kind": "plate",
+      "note": "narrow pintadera frieze band of triangles and zigzags between the scene and the three layers",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0.4961,
+        "w": 1,
+        "h": 0.0449
+      },
+      "px": {
+        "x": 0,
+        "y": 508,
+        "w": 1536,
+        "h": 46
+      },
+      "aspect": 33.3913,
+      "palette": [
+        {
+          "hex": "#8a421e",
+          "coverage": 0.8089
+        },
+        {
+          "hex": "#5f2510",
+          "coverage": 0.1223
+        },
+        {
+          "hex": "#b96d3f",
+          "coverage": 0.0688
+        }
+      ],
+      "detail": {
+        "energy": 24.4952
+      },
+      "medium": "raster",
+      "plate": "assets/plates/frieze-mid-top.png",
+      "text": null
+    },
+    {
+      "id": "medallion-identidad",
+      "kind": "plate",
+      "note": "stamped round pintadera medallion with concentric circles, in relief on the clay",
+      "grid": null,
+      "box": {
+        "x": 0.0599,
+        "y": 0.5469,
+        "w": 0.0651,
+        "h": 0.0977
+      },
+      "px": {
+        "x": 92,
+        "y": 560,
+        "w": 100,
+        "h": 100
+      },
+      "aspect": 1,
+      "palette": [
+        {
+          "hex": "#833c19",
+          "coverage": 0.7517
+        },
+        {
+          "hex": "#59220c",
+          "coverage": 0.2067
+        },
+        {
+          "hex": "#b26a3d",
+          "coverage": 0.0389
+        },
+        {
+          "hex": "#381808",
+          "coverage": 0.0017
+        },
+        {
+          "hex": "#d89868",
+          "coverage": 0.0009
+        }
+      ],
+      "detail": {
+        "energy": 9.7286
+      },
+      "medium": "raster",
+      "plate": "assets/plates/medallion-identidad.png",
+      "text": null
+    },
+    {
+      "id": "label-identidad",
+      "kind": "text",
+      "note": "two-line cream Nunito label: Identidad e infraestructura digital",
+      "grid": null,
+      "box": {
+        "x": 0.138,
+        "y": 0.5684,
+        "w": 0.1745,
+        "h": 0.0605
+      },
+      "px": {
+        "x": 212,
+        "y": 582,
+        "w": 268,
+        "h": 62
+      },
+      "aspect": 4.3226,
+      "palette": [
+        {
+          "hex": "#823b1a",
+          "coverage": 0.8896
+        },
+        {
+          "hex": "#9f6d4c",
+          "coverage": 0.0429
+        },
+        {
+          "hex": "#d6b89d",
+          "coverage": 0.0322
+        },
+        {
+          "hex": "#f8f6f0",
+          "coverage": 0.0225
+        },
+        {
+          "hex": "#bb8d78",
+          "coverage": 0.0129
+        }
+      ],
+      "detail": {
+        "energy": 47.2275
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 30,
+          "capHeightPx": 18,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.582,
+          "advTall": 0.4434,
+          "advX": 0.582,
+          "gap": 0.1662,
+          "xRatio": 0.6665,
+          "stemW": 0.1314,
+          "contrast": 1.1757,
+          "serif": 0.7689,
+          "densTall": 0.4207,
+          "densX": 0.5074,
+          "weight": 0.4207
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "divider-1",
+      "kind": "plate",
+      "note": "small vertical column of stamped triangles separating the first and second layer",
+      "grid": null,
+      "box": {
+        "x": 0.3411,
+        "y": 0.5469,
+        "w": 0.0169,
+        "h": 0.0977
+      },
+      "px": {
+        "x": 524,
+        "y": 560,
+        "w": 26,
+        "h": 100
+      },
+      "aspect": 0.26,
+      "palette": [
+        {
+          "hex": "#833c1a",
+          "coverage": 0.8791
+        },
+        {
+          "hex": "#cf8a5f",
+          "coverage": 0.085
+        },
+        {
+          "hex": "#ab6542",
+          "coverage": 0.0359
+        }
+      ],
+      "detail": {
+        "energy": 2.9849
+      },
+      "medium": "raster",
+      "plate": "assets/plates/divider-1.png",
+      "text": null
+    },
+    {
+      "id": "medallion-paisaje",
+      "kind": "plate",
+      "note": "stamped round pintadera medallion with a triangle-within-triangle pattern, in relief on the clay",
+      "grid": null,
+      "box": {
+        "x": 0.388,
+        "y": 0.5469,
+        "w": 0.0651,
+        "h": 0.0977
+      },
+      "px": {
+        "x": 596,
+        "y": 560,
+        "w": 100,
+        "h": 100
+      },
+      "aspect": 1,
+      "palette": [
+        {
+          "hex": "#853d1a",
+          "coverage": 0.8253
+        },
+        {
+          "hex": "#5a240c",
+          "coverage": 0.1289
+        },
+        {
+          "hex": "#c1764a",
+          "coverage": 0.0458
+        }
+      ],
+      "detail": {
+        "energy": 9.4679
+      },
+      "medium": "raster",
+      "plate": "assets/plates/medallion-paisaje.png",
+      "text": null
+    },
+    {
+      "id": "label-paisaje",
+      "kind": "text",
+      "note": "two-line cream Nunito label: Paisaje y territorio canario",
+      "grid": null,
+      "box": {
+        "x": 0.4622,
+        "y": 0.5684,
+        "w": 0.1367,
+        "h": 0.0605
+      },
+      "px": {
+        "x": 710,
+        "y": 582,
+        "w": 210,
+        "h": 62
+      },
+      "aspect": 3.3871,
+      "palette": [
+        {
+          "hex": "#863e1b",
+          "coverage": 0.8828
+        },
+        {
+          "hex": "#9b6645",
+          "coverage": 0.0412
+        },
+        {
+          "hex": "#f8f4e9",
+          "coverage": 0.0335
+        },
+        {
+          "hex": "#c89b80",
+          "coverage": 0.0216
+        },
+        {
+          "hex": "#eed6ba",
+          "coverage": 0.0209
+        }
+      ],
+      "detail": {
+        "energy": 33.441
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 24,
+          "capHeightPx": 17.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6003,
+          "advTall": 0.1434,
+          "advX": 0.6023,
+          "gap": 0.1434,
+          "xRatio": 0.7017,
+          "stemW": 0.1372,
+          "contrast": 1.1406,
+          "serif": null,
+          "densTall": 0.7119,
+          "densX": 0.4602,
+          "weight": 0.7119
+        },
+        "widthClass": "normal",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "divider-2",
+      "kind": "plate",
+      "note": "small vertical column of stamped triangles separating the second and third layer",
+      "grid": null,
+      "box": {
+        "x": 0.6406,
+        "y": 0.5469,
+        "w": 0.0169,
+        "h": 0.0977
+      },
+      "px": {
+        "x": 984,
+        "y": 560,
+        "w": 26,
+        "h": 100
+      },
+      "aspect": 0.26,
+      "palette": [
+        {
+          "hex": "#853c1b",
+          "coverage": 0.8725
+        },
+        {
+          "hex": "#c37d52",
+          "coverage": 0.1275
+        }
+      ],
+      "detail": {
+        "energy": 2.9575
+      },
+      "medium": "raster",
+      "plate": "assets/plates/divider-2.png",
+      "text": null
+    },
+    {
+      "id": "medallion-gestion",
+      "kind": "plate",
+      "note": "stamped round pintadera medallion with a zigzag pattern, in relief on the clay",
+      "grid": null,
+      "box": {
+        "x": 0.7044,
+        "y": 0.5469,
+        "w": 0.0651,
+        "h": 0.0977
+      },
+      "px": {
+        "x": 1082,
+        "y": 560,
+        "w": 100,
+        "h": 100
+      },
+      "aspect": 1,
+      "palette": [
+        {
+          "hex": "#87401c",
+          "coverage": 0.801
+        },
+        {
+          "hex": "#5c240b",
+          "coverage": 0.1548
+        },
+        {
+          "hex": "#bb7247",
+          "coverage": 0.0398
+        },
+        {
+          "hex": "#381808",
+          "coverage": 0.0026
+        },
+        {
+          "hex": "#d89860",
+          "coverage": 0.0017
+        }
+      ],
+      "detail": {
+        "energy": 9.8366
+      },
+      "medium": "raster",
+      "plate": "assets/plates/medallion-gestion.png",
+      "text": null
+    },
+    {
+      "id": "label-gestion",
+      "kind": "text",
+      "note": "two-line cream Nunito label: Gestión de activos y dinamización",
+      "grid": null,
+      "box": {
+        "x": 0.7799,
+        "y": 0.5684,
+        "w": 0.1628,
+        "h": 0.0605
+      },
+      "px": {
+        "x": 1198,
+        "y": 582,
+        "w": 250,
+        "h": 62
+      },
+      "aspect": 4.0323,
+      "palette": [
+        {
+          "hex": "#823a19",
+          "coverage": 0.8693
+        },
+        {
+          "hex": "#95603f",
+          "coverage": 0.0415
+        },
+        {
+          "hex": "#c8a185",
+          "coverage": 0.0364
+        },
+        {
+          "hex": "#e8d0b9",
+          "coverage": 0.0301
+        },
+        {
+          "hex": "#f8f3e6",
+          "coverage": 0.0227
+        }
+      ],
+      "detail": {
+        "energy": 39.4475
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 27,
+          "capHeightPx": 17.3,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5917,
+          "advTall": 0.657,
+          "advX": 0.5917,
+          "gap": 0.1714,
+          "xRatio": 0.6941,
+          "stemW": 0.1349,
+          "contrast": 1.1204,
+          "serif": 0.5744,
+          "densTall": 0.4187,
+          "densX": 0.489,
+          "weight": 0.4187
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "frieze-mid-bottom",
+      "kind": "plate",
+      "note": "narrow pintadera frieze band of triangles and zigzags closing the three-layer band",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0.6465,
+        "w": 1,
+        "h": 0.0449
+      },
+      "px": {
+        "x": 0,
+        "y": 662,
+        "w": 1536,
+        "h": 46
+      },
+      "aspect": 33.3913,
+      "palette": [
+        {
+          "hex": "#833d1c",
+          "coverage": 0.843
+        },
+        {
+          "hex": "#ae6639",
+          "coverage": 0.0934
+        },
+        {
+          "hex": "#59240b",
+          "coverage": 0.0635
+        }
+      ],
+      "detail": {
+        "energy": 21.2007
+      },
+      "medium": "raster",
+      "plate": "assets/plates/frieze-mid-bottom.png",
+      "text": null
+    },
+    {
+      "id": "heading-proyectos",
+      "kind": "text",
+      "note": "section heading Proyectos reales in thin cream Poiret One",
+      "grid": null,
+      "box": {
+        "x": 0.0339,
+        "y": 0.7012,
+        "w": 0.1953,
+        "h": 0.043
+      },
+      "px": {
+        "x": 52,
+        "y": 718,
+        "w": 300,
+        "h": 44
+      },
+      "aspect": 6.8182,
+      "palette": [
+        {
+          "hex": "#7e3818",
+          "coverage": 0.8507
+        },
+        {
+          "hex": "#f8f4e8",
+          "coverage": 0.0473
+        },
+        {
+          "hex": "#9a6747",
+          "coverage": 0.0447
+        },
+        {
+          "hex": "#c9a188",
+          "coverage": 0.0327
+        },
+        {
+          "hex": "#e4c9b3",
+          "coverage": 0.0247
+        }
+      ],
+      "detail": {
+        "energy": 52.7519
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 14,
+          "capHeightPx": 33.3,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5398,
+          "advTall": 0.4498,
+          "advX": 0.5398,
+          "gap": 0.09,
+          "xRatio": 0.6221,
+          "stemW": 0.065,
+          "contrast": 0.9499,
+          "serif": 0.9628,
+          "densTall": 0.2785,
+          "densX": 0.3178,
+          "weight": 0.2785
+        },
+        "widthClass": "condensed",
+        "weightClass": "light",
+        "chosen": {
+          "family": "Poiret One",
+          "weight": 400,
+          "fontSizePx": 44,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 15,
+            "capHeightPx": 33.5,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.4627,
+            "advTall": 0.2985,
+            "advX": 0.5373,
+            "gap": 0.1194,
+            "xRatio": 0.6066,
+            "stemW": 0.0496,
+            "contrast": 0.9609,
+            "serif": null,
+            "densTall": 0.2324,
+            "densX": 0.2372,
+            "weight": 0.2324
+          },
+          "stamp": "ac7702697a5a"
+        }
+      }
+    },
+    {
+      "id": "ornament-proyectos",
+      "kind": "plate",
+      "note": "tiny stamped zigzag mark under the section heading",
+      "grid": null,
+      "box": {
+        "x": 0.0352,
+        "y": 0.7461,
+        "w": 0.0234,
+        "h": 0.0156
+      },
+      "px": {
+        "x": 54,
+        "y": 764,
+        "w": 36,
+        "h": 16
+      },
+      "aspect": 2.25,
+      "palette": [
+        {
+          "hex": "#7d3919",
+          "coverage": 0.875
+        },
+        {
+          "hex": "#e8a882",
+          "coverage": 0.0694
+        },
+        {
+          "hex": "#f0c898",
+          "coverage": 0.0278
+        },
+        {
+          "hex": "#885828",
+          "coverage": 0.0139
+        },
+        {
+          "hex": "#a85838",
+          "coverage": 0.0139
+        }
+      ],
+      "detail": {
+        "energy": 7.7175
+      },
+      "medium": "raster",
+      "plate": "assets/plates/ornament-proyectos.png",
+      "text": null
+    },
+    {
+      "id": "tile-terapia",
+      "kind": "chrome",
+      "note": "raised clay tile with rounded corners and soft inset edge holding a project screenshot and its caption",
+      "grid": null,
+      "container": true,
+      "bleed": true,
+      "box": {
+        "x": 0.0378,
+        "y": 0.7656,
+        "w": 0.3021,
+        "h": 0.2344
+      },
+      "px": {
+        "x": 58,
+        "y": 784,
+        "w": 464,
+        "h": 240
+      },
+      "aspect": 1.9333,
+      "palette": [
+        {
+          "hex": "#f4ede7",
+          "coverage": 0.3795
+        },
+        {
+          "hex": "#8a421f",
+          "coverage": 0.3724
+        },
+        {
+          "hex": "#bab4ad",
+          "coverage": 0.1891
+        },
+        {
+          "hex": "#c0d1dd",
+          "coverage": 0.0429
+        },
+        {
+          "hex": "#8daecb",
+          "coverage": 0.016
+        }
+      ],
+      "detail": {
+        "energy": 25.887
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "shot-terapia",
+      "kind": "image",
+      "note": "screenshot of the Mi Terapia Regresiva website inlaid in the tile; the user chose this project for the first tile and approved the real capture from assets/projects over the comp's invented Dharma screenshot",
+      "grid": null,
+      "parentId": "tile-terapia",
+      "box": {
+        "x": 0.0469,
+        "y": 0.7793,
+        "w": 0.2839,
+        "h": 0.1777
+      },
+      "px": {
+        "x": 72,
+        "y": 798,
+        "w": 436,
+        "h": 182
+      },
+      "aspect": 2.3956,
+      "palette": [
+        {
+          "hex": "#f4eee8",
+          "coverage": 0.5331
+        },
+        {
+          "hex": "#b9b5ae",
+          "coverage": 0.2613
+        },
+        {
+          "hex": "#8e4421",
+          "coverage": 0.1259
+        },
+        {
+          "hex": "#c5d5e3",
+          "coverage": 0.047
+        },
+        {
+          "hex": "#90b0cb",
+          "coverage": 0.0326
+        }
+      ],
+      "detail": {
+        "energy": 28.3154
+      },
+      "medium": "raster",
+      "plate": "assets/plates/shot-terapia.png",
+      "text": null
+    },
+    {
+      "id": "caption-terapia",
+      "kind": "text",
+      "note": "cream Nunito caption: Mi Terapia Regresiva (the comp reads Clínica Dental Dharma; the user chose Mi Terapia Regresiva)",
+      "grid": null,
+      "parentId": "tile-terapia",
+      "box": {
+        "x": 0.0521,
+        "y": 0.959,
+        "w": 0.1563,
+        "h": 0.0273
+      },
+      "px": {
+        "x": 80,
+        "y": 982,
+        "w": 240,
+        "h": 28
+      },
+      "aspect": 8.5714,
+      "palette": [
+        {
+          "hex": "#87401e",
+          "coverage": 0.8385
+        },
+        {
+          "hex": "#f8f7ea",
+          "coverage": 0.0551
+        },
+        {
+          "hex": "#966140",
+          "coverage": 0.0476
+        },
+        {
+          "hex": "#ebceb9",
+          "coverage": 0.0388
+        },
+        {
+          "hex": "#c59a7d",
+          "coverage": 0.02
+        }
+      ],
+      "detail": {
+        "energy": 42.8388
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 19,
+          "capHeightPx": 15.1,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5979,
+          "advTall": 0.382,
+          "advX": 0.5979,
+          "gap": 0.1495,
+          "xRatio": 0.6824,
+          "stemW": 0.1428,
+          "contrast": 1.117,
+          "serif": 0.4309,
+          "densTall": 0.5696,
+          "densX": 0.518,
+          "weight": 0.5696
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "tile-archipielago",
+      "kind": "chrome",
+      "note": "raised clay tile with rounded corners and soft inset edge holding a project screenshot and its caption",
+      "grid": null,
+      "container": true,
+      "bleed": true,
+      "box": {
+        "x": 0.3516,
+        "y": 0.7656,
+        "w": 0.2969,
+        "h": 0.2344
+      },
+      "px": {
+        "x": 540,
+        "y": 784,
+        "w": 456,
+        "h": 240
+      },
+      "aspect": 1.9,
+      "palette": [
+        {
+          "hex": "#0a3746",
+          "coverage": 0.3996
+        },
+        {
+          "hex": "#8d4320",
+          "coverage": 0.3585
+        },
+        {
+          "hex": "#094f50",
+          "coverage": 0.1981
+        },
+        {
+          "hex": "#4b616a",
+          "coverage": 0.0279
+        },
+        {
+          "hex": "#0f7a78",
+          "coverage": 0.0159
+        }
+      ],
+      "detail": {
+        "energy": 25.5889
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "shot-archipielago",
+      "kind": "image",
+      "note": "screenshot of the Archipiélago Vivo website inlaid in the tile; the real capture from assets/projects replaces the comp's invented one",
+      "grid": null,
+      "parentId": "tile-archipielago",
+      "box": {
+        "x": 0.3607,
+        "y": 0.7793,
+        "w": 0.2786,
+        "h": 0.1777
+      },
+      "px": {
+        "x": 554,
+        "y": 798,
+        "w": 428,
+        "h": 182
+      },
+      "aspect": 2.3516,
+      "palette": [
+        {
+          "hex": "#0a3746",
+          "coverage": 0.5598
+        },
+        {
+          "hex": "#094f51",
+          "coverage": 0.2845
+        },
+        {
+          "hex": "#904622",
+          "coverage": 0.1044
+        },
+        {
+          "hex": "#0a1a2b",
+          "coverage": 0.0282
+        },
+        {
+          "hex": "#0e7b78",
+          "coverage": 0.0231
+        }
+      ],
+      "detail": {
+        "energy": 29.6059
+      },
+      "medium": "raster",
+      "plate": "assets/plates/shot-archipielago.png",
+      "text": null
+    },
+    {
+      "id": "caption-archipielago",
+      "kind": "text",
+      "note": "cream Nunito caption: Archipiélago Vivo",
+      "grid": null,
+      "parentId": "tile-archipielago",
+      "box": {
+        "x": 0.3659,
+        "y": 0.959,
+        "w": 0.1237,
+        "h": 0.0273
+      },
+      "px": {
+        "x": 562,
+        "y": 982,
+        "w": 190,
+        "h": 28
+      },
+      "aspect": 6.7857,
+      "palette": [
+        {
+          "hex": "#88401d",
+          "coverage": 0.8283
+        },
+        {
+          "hex": "#9f6849",
+          "coverage": 0.0583
+        },
+        {
+          "hex": "#f7f3e4",
+          "coverage": 0.0488
+        },
+        {
+          "hex": "#e3c9b0",
+          "coverage": 0.0425
+        },
+        {
+          "hex": "#c59a80",
+          "coverage": 0.022
+        }
+      ],
+      "detail": {
+        "energy": 39.4994
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 16,
+          "capHeightPx": 14.6,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6013,
+          "advTall": 0.3952,
+          "advX": 0.6185,
+          "gap": 0.1374,
+          "xRatio": 0.6764,
+          "stemW": 0.1454,
+          "contrast": 1.1237,
+          "serif": 0.3632,
+          "densTall": 0.5698,
+          "densX": 0.5014,
+          "weight": 0.5698
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    },
+    {
+      "id": "tile-diezclaves",
+      "kind": "chrome",
+      "note": "raised clay tile with rounded corners and soft inset edge holding a project screenshot and its caption",
+      "grid": null,
+      "container": true,
+      "bleed": true,
+      "box": {
+        "x": 0.6615,
+        "y": 0.7656,
+        "w": 0.3021,
+        "h": 0.2344
+      },
+      "px": {
+        "x": 1016,
+        "y": 784,
+        "w": 464,
+        "h": 240
+      },
+      "aspect": 1.9333,
+      "palette": [
+        {
+          "hex": "#f7eae8",
+          "coverage": 0.4599
+        },
+        {
+          "hex": "#8c4320",
+          "coverage": 0.424
+        },
+        {
+          "hex": "#cae4e6",
+          "coverage": 0.058
+        },
+        {
+          "hex": "#979495",
+          "coverage": 0.0293
+        },
+        {
+          "hex": "#638299",
+          "coverage": 0.0288
+        }
+      ],
+      "detail": {
+        "energy": 30.4926
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "shot-diezclaves",
+      "kind": "image",
+      "note": "screenshot of the Diez Claves website inlaid in the tile; the real capture from assets/projects replaces the comp's invented one",
+      "grid": null,
+      "parentId": "tile-diezclaves",
+      "box": {
+        "x": 0.6719,
+        "y": 0.7793,
+        "w": 0.2839,
+        "h": 0.1777
+      },
+      "px": {
+        "x": 1032,
+        "y": 798,
+        "w": 436,
+        "h": 182
+      },
+      "aspect": 2.3956,
+      "palette": [
+        {
+          "hex": "#f7eae8",
+          "coverage": 0.6884
+        },
+        {
+          "hex": "#924823",
+          "coverage": 0.1287
+        },
+        {
+          "hex": "#c9e5e6",
+          "coverage": 0.0894
+        },
+        {
+          "hex": "#93908f",
+          "coverage": 0.0486
+        },
+        {
+          "hex": "#648299",
+          "coverage": 0.045
+        }
+      ],
+      "detail": {
+        "energy": 37.7997
+      },
+      "medium": "raster",
+      "plate": "assets/plates/shot-diezclaves.png",
+      "text": null
+    },
+    {
+      "id": "caption-diezclaves",
+      "kind": "text",
+      "note": "cream Nunito caption: Diez Claves",
+      "grid": null,
+      "parentId": "tile-diezclaves",
+      "box": {
+        "x": 0.6771,
+        "y": 0.959,
+        "w": 0.0911,
+        "h": 0.0273
+      },
+      "px": {
+        "x": 1040,
+        "y": 982,
+        "w": 140,
+        "h": 28
+      },
+      "aspect": 5,
+      "palette": [
+        {
+          "hex": "#8b411f",
+          "coverage": 0.8712
+        },
+        {
+          "hex": "#d5b596",
+          "coverage": 0.0451
+        },
+        {
+          "hex": "#b17d5e",
+          "coverage": 0.0343
+        },
+        {
+          "hex": "#f8f8ed",
+          "coverage": 0.0258
+        },
+        {
+          "hex": "#f4dbc5",
+          "coverage": 0.0236
+        }
+      ],
+      "detail": {
+        "energy": 27.1537
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 10,
+          "capHeightPx": 14.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6055,
+          "advTall": 0.4844,
+          "advX": 0.6055,
+          "gap": 0.1384,
+          "xRatio": 0.705,
+          "stemW": 0.152,
+          "contrast": 1.1422,
+          "serif": null,
+          "densTall": 0.6242,
+          "densX": 0.569,
+          "weight": 0.6242
+        },
+        "widthClass": "normal",
+        "weightClass": "bold"
+      }
+    }
+  ],
+  "compSha256": "508f4c2e0e84241542e9890e0b80fa7a238f3dd3cdd7ab8453cefade1cf83825",
+  "regionsSource": {
+    "path": ".impeccable/build/regions.json",
+    "sha256": "d84944a9f40f7deced54255c1745d5f4311b33aa89ebffb920148f147d4fd60f"
+  }
+}

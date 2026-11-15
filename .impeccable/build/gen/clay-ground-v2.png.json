@@ -1,0 +1,11 @@
+{
+  "prompt": "A seamless, edge-to-edge texture of burnished reddish-brown terracotta clay seen straight on, matching the reference: mid clay #8b421e as the field, with very soft, large, low-contrast firing clouds where the clay is a touch darker (#7a3818) or lighter (#96491f), drifting irregularly across the surface, plus fine burnish and tiny pores. No discrete motifs, no stamps, no lines, no cracks, no repeating marks, no vignette, no lighting gradient across the frame, nothing that can be counted or recognised as a repeat. Even overall tone so it tiles; the left edge must continue into the right edge and the top into the bottom.\n",
+  "createdAt": "2026-11-14T21:48:22.088Z",
+  "tool": "impeccable generate-image",
+  "model": "gpt-image-2.5-flare",
+  "background": "opaque",
+  "outputFormat": "png",
+  "refs": [
+    ".impeccable/build/crops/ground-ref.png"
+  ]
+}

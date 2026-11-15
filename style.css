@@ -677,3 +677,6 @@ footer {
   border: 1px solid var(--line);
   flex: none;
 }
+
+/* Anclas desde la portada: que la barra de idiomas fija no tape la ficha */
+.project-card[id] { scroll-margin-top: 4.5rem; }
