@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gofio Design | Endemic gardens, networks & satellite TV in Tenerife</title>
-    <meta
-      name="description"
-      content="Tenerife design studio: endemic gardens that cut water bills by up to 70 %, Omada apartment networks and communal satellite TV with a 5-year warranty."
-    />
+    <title>Gofio Design | Studio in Tenerife since 2005</title>
+    <meta name="description" content="Studio in Tenerife since 2005. Websites, data networks, native-flora gardens and heritage, made to last. Message me on WhatsApp." />
     <link rel="canonical" href="https://gofiodesign.eu/en.html" />
     <link rel="alternate" hreflang="es" href="https://gofiodesign.eu/index.html" />
     <link rel="alternate" hreflang="en" href="https://gofiodesign.eu/en.html" />
@@ -19,174 +16,181 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gofio Design" />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:title" content="Gofio Design | Endemic gardens, networks & satellite TV in Tenerife" />
-    <meta property="og:description" content="Tenerife design studio: endemic gardens that cut water bills by up to 70 %, Omada apartment networks and communal satellite TV with a 5-year warranty." />
+    <meta property="og:title" content="Gofio Design | Studio in Tenerife since 2005" />
+    <meta property="og:description" content="Websites, data networks, native-flora gardens and heritage, made to last." />
     <meta property="og:url" content="https://gofiodesign.eu/en.html" />
     <meta property="og:image" content="https://gofiodesign.eu/assets/brand/og-image.png" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poiret+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-
-    <link rel="stylesheet" href="style.css?v=20261109p" />
+    <link rel="preload" href="assets/fonts/poiret-one-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="portada.css?v=20261115c" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#554242" />
+    <meta name="theme-color" content="#8b421e" />
   </head>
   <body>
-    <nav class="lang-nav">
-      <a href="proyectos.html" class="nav-link">Projects</a>
-      <a href="index.html">ES</a>
-      <a href="en.html" class="active">EN</a>
-      <a href="de.html">DE</a>
-      <a href="fr.html">FR</a>
-    </nav>
-    <header class="hero">
-      <div class="logo-container">
-        <img class="logo-mark" src="assets/brand/logo-sello.svg" alt="Gofio Design" width="140" height="140" />
+    <a class="skip-link" href="#principal">Skip to content</a>
+
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie notice">
+      <div class="contenedor">
+        <p>We use cookies to improve your experience and analyse traffic. You can accept all cookies or reject non-essential ones. <a href="privacy.html">Read more</a>.</p>
+        <div class="cookie-actions">
+          <button type="button" class="cookie-accept" onclick="acceptCookies()">Accept</button>
+          <button type="button" class="cookie-reject" onclick="rejectCookies()">Reject</button>
+        </div>
       </div>
-      <h1>GOFIO DESIGN</h1>
-      <p class="tagline">Natural curiosity</p>
-      <p class="method">From problem to idea, from idea to concept</p>
-    </header>
-    <main>
-      <section class="layer">
-        <h2>01. Digital Identity & Infrastructure</h2>
-        <div class="grid">
-          <div class="card">
-            <h3><i class="fa-solid fa-pen-nib"></i> Brand Systems</h3>
-            <p>
-              Logo design and strategic branding for companies in the Canary
-              Islands seeking to project professionalism and heritage.
-            </p>
-          </div>
-          <div class="card">
-            <h3><i class="fa-solid fa-network-wired"></i> Data Networks</h3>
-            <p>
-              Technical installation and certification of telecommunications
-              infrastructure for office and residential environments on the
-              island.
-            </p>
-          </div>
-          <div class="card">
-            <h3><i class="fa-solid fa-bullhorn"></i> Digital Marketing</h3>
-            <p>
-              Online presence management and communication focused on both local
-              and European markets.
-            </p>
-          </div>
-        </div>
-      </section>
+    </div>
 
-      <section class="layer landscape">
-        <h2>02. Canarian Landscape & Territory</h2>
-        <div class="grid">
-          <div class="card">
-            <h3><i class="fa-solid fa-leaf"></i> Garden Design</h3>
-            <p>
-              Sustainable outdoor space planning using native flora and
-              efficient irrigation systems adapted to Tenerife's climate.
-            </p>
-          </div>
-          <div class="card">
-            <h3><i class="fa-solid fa-seedling"></i> Execution & Rewilding</h3>
-            <p>
-              Construction and maintenance of projects that restore local
-              biodiversity and enhance the urban environment.
-            </p>
-          </div>
-        </div>
-      </section>
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="p-cuadrado" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><rect x="6" y="6" width="108" height="108" rx="5"/><rect x="16" y="16" width="88" height="88" rx="2"/><path d="M16 104 104 16M28 104 104 28"/></g><g fill="currentColor"><circle cx="96" cy="56" r="1.9"/><circle cx="88" cy="64" r="1.9"/><circle cx="96" cy="64" r="1.9"/><circle cx="80" cy="72" r="1.9"/><circle cx="88" cy="72" r="1.9"/><circle cx="96" cy="72" r="1.9"/><circle cx="72" cy="80" r="1.9"/><circle cx="80" cy="80" r="1.9"/><circle cx="88" cy="80" r="1.9"/><circle cx="96" cy="80" r="1.9"/><circle cx="64" cy="88" r="1.9"/><circle cx="72" cy="88" r="1.9"/><circle cx="80" cy="88" r="1.9"/><circle cx="88" cy="88" r="1.9"/><circle cx="96" cy="88" r="1.9"/><circle cx="56" cy="96" r="1.9"/><circle cx="64" cy="96" r="1.9"/><circle cx="72" cy="96" r="1.9"/><circle cx="80" cy="96" r="1.9"/><circle cx="88" cy="96" r="1.9"/><circle cx="96" cy="96" r="1.9"/></g></symbol>
+      <symbol id="p-circulo" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="60" cy="60" r="54"/><circle cx="60" cy="60" r="40"/><path d="M103 60 109.5 72.3 M101.9 69.6 105.5 83 M98.7 78.7 99.2 92.6 M93.6 86.8 91 100.5 M86.8 93.6 81.2 106.4 M78.7 98.7 70.4 109.9 M69.6 101.9 59 111 M60 103 47.7 109.5 M50.4 101.9 37 105.5 M41.3 98.7 27.4 99.2 M33.2 93.6 19.5 91 M26.4 86.8 13.6 81.2 M21.3 78.7 10.1 70.4 M18.1 69.6 9 59 M17 60 10.5 47.7 M18.1 50.4 14.5 37 M21.3 41.3 20.8 27.4 M26.4 33.2 29 19.5 M33.2 26.4 38.8 13.6 M41.3 21.3 49.6 10.1 M50.4 18.1 61 9 M60 17 72.3 10.5 M69.6 18.1 83 14.5 M78.7 21.3 92.6 20.8 M86.8 26.4 100.5 29 M93.6 33.2 106.4 38.8 M98.7 41.3 109.9 49.6 M101.9 50.4 111 61"/><circle cx="60" cy="60" r="27"/><circle cx="60" cy="60" r="16"/></g><circle cx="60" cy="60" r="5" fill="currentColor"/></symbol>
+      <symbol id="p-triangulo" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-linejoin="round"><path stroke-width="2.5" d="M60 8 113 101H7Z"/><path stroke-width="2.5" d="M34 55H86L60 101Z"/><path stroke-width="1.8" stroke-linecap="round" d="M57 23H63M52.9 30H67.1M48.9 37H71.1M44.9 44H75.1M32.7 65H35.3M84.7 65H87.3M28.7 72H39.3M80.7 72H91.3M24.6 79H43.4M76.6 79H95.4M20.6 86H47.4M72.6 86H99.4M16.5 93H51.5M68.5 93H103.5"/></g></symbol>
+    </svg>
 
-      <section class="layer social">
-        <h2>03. Asset Management & Community Engagement</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>
-              <i class="fa-solid fa-recycle"></i> Circular Logistics & Fashion
-            </h3>
-            <p>
-              Sustainable event coordination, sponsorship management, and
-              technical machinery optimization for creative sectors.
-            </p>
-          </div>
-          <div class="card">
-            <h3>
-              <i class="fa-solid fa-monument"></i> Heritage Interpretation
-            </h3>
-            <p>
-              Knowledge dissemination services in Environmental Reserves and
-              educational projects for academic centers.
-            </p>
-          </div>
-          <div class="card">
-            <h3><i class="fa-solid fa-bolt-lightning"></i> Energy Savings</h3>
-            <p>
-              Workshops and social consultancy for the implementation of energy
-              efficiency measures in local communities.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="layer home-projects" id="proyectos">
-        <h2>04. Web Projects</h2>
-        <p>Some of the websites we have designed and built.</p>
-        <div class="home-projects-grid">
-          <a class="home-project" href="https://gofiodesign.eu/clinicadentaldharma_v2/" target="_blank" rel="noopener">
-            <img src="assets/projects/clinica-dental-dharma.jpg" alt="Preview of Clínica Dental Dharma" width="1280" height="800" loading="lazy" />
-            <span>Clínica Dental Dharma <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
-          <a class="home-project" href="https://miterapiaregresiva.com/" target="_blank" rel="noopener">
-            <img src="assets/projects/mi-terapia-regresiva.jpg" alt="Preview of Mi Terapia Regresiva" width="1280" height="800" loading="lazy" />
-            <span>Mi Terapia Regresiva <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
-          <a class="home-project" href="https://canarias.africa/" target="_blank" rel="noopener">
-            <img src="assets/projects/canarias-africa.jpg" alt="Preview of Canarias.africa" width="1280" height="800" loading="lazy" />
-            <span>Canarias.africa <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-          </a>
-        </div>
-        <div class="home-projects-cta">
-          <a href="proyectos.html" class="projects-btn">See all projects <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </section>
-      <div class="cta-container">
-        <a href="https://wa.me/34623760960" class="whatsapp-btn">
-          <i class="fa-brands fa-whatsapp"></i> Contact us on WhatsApp
+    <header class="cabecera">
+      <div class="barra contenedor">
+        <a class="sello-gd" href="en.html" aria-label="Gofio Design, home">
+          <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.125" stroke-linejoin="round"><circle cx="60" cy="60" r="56.5"/><circle cx="60" cy="60" r="48"/><path d="M60 12 66.81 3.912 71.487 13.395 80.035 7.172 82.307 17.498 92.096 13.501 91.83 24.071 102.291 22.534 99.503 32.733 110.028 33.743 104.881 42.979 114.858 46.479 107.65 54.214 116.5 60 107.65 65.786 114.858 73.521 104.881 77.021 110.028 86.257 99.503 87.267 102.291 97.466 91.83 95.929 92.096 106.499 82.307 102.502 80.035 112.828 71.487 106.605 66.81 116.088 60 108 53.19 116.088 48.513 106.605 39.965 112.828 37.693 102.502 27.904 106.499 28.17 95.929 17.709 97.466 20.497 87.267 9.972 86.257 15.119 77.021 5.142 73.521 12.35 65.786 3.5 60 12.35 54.214 5.142 46.479 15.119 42.979 9.972 33.743 20.497 32.733 17.709 22.534 28.17 24.071 27.904 13.501 37.693 17.498 39.965 7.172 48.513 13.395 53.19 3.912 60 12"/></g><path d="M57.5 18.137A41.938 41.938 0 0 0 57.5 101.863V57.75H36.531V66.25H49V91.576A33.438 33.438 0 0 1 57.5 26.656Z" fill="currentColor"/><path d="M66.75 22.922A37.688 37.688 0 0 1 66.75 97.078Z" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linejoin="miter"/></svg>
+        </a>
+        <nav class="nav-lenguas" aria-label="Languages">
+          <a href="index.html" hreflang="es" lang="es">ES</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="en.html" hreflang="en" aria-current="page">EN</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="de.html" hreflang="de" lang="de">DE</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="fr.html" hreflang="fr" lang="fr">FR</a>
+        </nav>
+      </div>
+      <div class="friso" aria-hidden="true"></div>
+
+      <div class="frente contenedor">
+        <h1 class="titulo">GOFIO DESIGN</h1>
+        <p class="gancho">A studio in Tenerife since 2005.<br />
+          Websites, networks, gardens and heritage, made to last.</p>
+        <a class="boton-whatsapp" href="https://wa.me/34623760960">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a9.9 9.9 0 0 0-8.5 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Message me on WhatsApp
         </a>
       </div>
+
+      <div class="friso-fino" aria-hidden="true"></div>
+      <ul class="capas contenedor" aria-label="Three layers of work">
+        <li>
+          <a href="#capa-identidad">
+            <svg class="pintadera" aria-hidden="true" focusable="false"><use href="#p-cuadrado" /></svg>
+            <span>Digital identity and infrastructure</span>
+          </a>
+        </li>
+        <li>
+          <a href="#capa-paisaje">
+            <svg class="pintadera" aria-hidden="true" focusable="false"><use href="#p-circulo" /></svg>
+            <span>Canarian landscape and territory</span>
+          </a>
+        </li>
+        <li>
+          <a href="#capa-gestion">
+            <svg class="pintadera" aria-hidden="true" focusable="false"><use href="#p-triangulo" /></svg>
+            <span>Asset management and community engagement</span>
+          </a>
+        </li>
+      </ul>
+      <div class="friso-fino" aria-hidden="true"></div>
+    </header>
+
+    <main id="principal">
+      <section class="proyectos contenedor" aria-labelledby="h-proyectos">
+        <h2 id="h-proyectos">Real projects</h2>
+        <ul class="azulejos">
+          <li>
+            <a class="azulejo" href="proyectos.html#mi-terapia-regresiva">
+              <img src="assets/projects/mi-terapia-regresiva.jpg" alt="" width="1280" height="800" loading="lazy" />
+              <span>Mi Terapia Regresiva</span>
+            </a>
+          </li>
+          <li>
+            <a class="azulejo" href="proyectos.html#archipielago-vivo">
+              <img src="assets/projects/archipielago-vivo.jpg" alt="" width="1280" height="800" loading="lazy" />
+              <span>Archipiélago Vivo</span>
+            </a>
+          </li>
+          <li>
+            <a class="azulejo" href="proyectos.html#diez-claves">
+              <img src="assets/projects/diez-claves.jpg" alt="" width="1280" height="800" loading="lazy" />
+              <span>Diez Claves</span>
+            </a>
+          </li>
+        </ul>
+        <p class="ver-todos"><a href="proyectos.html">See the twelve published projects and those in progress</a></p>
+      </section>
+
+      <div class="friso-fino" aria-hidden="true"></div>
+
+      <section class="servicios contenedor" aria-labelledby="h-servicios">
+        <h2 id="h-servicios">What we do</h2>
+        <div class="capas-detalle">
+          <article class="capa-detalle" id="capa-identidad">
+            <svg class="pintadera" aria-hidden="true" focusable="false"><use href="#p-cuadrado" /></svg>
+            <h3>Digital identity and infrastructure</h3>
+            <dl>
+              <dt>Brand systems</dt>
+              <dd>Logos and branding for companies in the Canary Islands that want to project professionalism and roots.</dd>
+              <dt>Data networks</dt>
+              <dd>Technical installation and certification of networks for offices, holiday lets and homes on the island.</dd>
+              <dt>Digital marketing</dt>
+              <dd>Online presence and communication for the local and European market.</dd>
+            </dl>
+          </article>
+          <article class="capa-detalle" id="capa-paisaje">
+            <svg class="pintadera" aria-hidden="true" focusable="false"><use href="#p-circulo" /></svg>
+            <h3>Canarian landscape and territory</h3>
+            <dl>
+              <dt>Garden design</dt>
+              <dd>Outdoor spaces with native flora and efficient irrigation, adapted to Tenerife’s climate.</dd>
+              <dt>Build and rewilding</dt>
+              <dd>Construction and maintenance of projects that restore local biodiversity.</dd>
+            </dl>
+          </article>
+          <article class="capa-detalle" id="capa-gestion">
+            <svg class="pintadera" aria-hidden="true" focusable="false"><use href="#p-triangulo" /></svg>
+            <h3>Asset management and community engagement</h3>
+            <dl>
+              <dt>Circular logistics and events</dt>
+              <dd>Coordination of sustainable events, sponsorships and technical equipment for creative sectors.</dd>
+              <dt>Heritage interpretation</dt>
+              <dd>Activities in nature reserves and educational projects with schools.</dd>
+              <dt>Efficiency and savings</dt>
+              <dd>Workshops and consultancy to apply energy-efficiency measures in local communities.</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <div class="friso-fino" aria-hidden="true"></div>
+
+      <section class="cierre contenedor" aria-labelledby="h-cierre">
+        <h2 id="h-cierre">Shall we talk about your project?</h2>
+        <p>Tell me what you need. I reply in person, from Tenerife.</p>
+        <a class="boton-whatsapp" href="https://wa.me/34623760960">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a9.9 9.9 0 0 0-8.5 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Message me on WhatsApp
+        </a>
+      </section>
     </main>
-    <footer>
-      <img class="footer-mark" src="assets/brand/logo-sello-oscuro.svg" alt="" width="44" height="44" />
+
+    <div class="friso" aria-hidden="true"></div>
+    <footer class="pie">
+      <svg class="sello-pie" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.125" stroke-linejoin="round"><circle cx="60" cy="60" r="56.5"/><circle cx="60" cy="60" r="48"/><path d="M60 12 66.81 3.912 71.487 13.395 80.035 7.172 82.307 17.498 92.096 13.501 91.83 24.071 102.291 22.534 99.503 32.733 110.028 33.743 104.881 42.979 114.858 46.479 107.65 54.214 116.5 60 107.65 65.786 114.858 73.521 104.881 77.021 110.028 86.257 99.503 87.267 102.291 97.466 91.83 95.929 92.096 106.499 82.307 102.502 80.035 112.828 71.487 106.605 66.81 116.088 60 108 53.19 116.088 48.513 106.605 39.965 112.828 37.693 102.502 27.904 106.499 28.17 95.929 17.709 97.466 20.497 87.267 9.972 86.257 15.119 77.021 5.142 73.521 12.35 65.786 3.5 60 12.35 54.214 5.142 46.479 15.119 42.979 9.972 33.743 20.497 32.733 17.709 22.534 28.17 24.071 27.904 13.501 37.693 17.498 39.965 7.172 48.513 13.395 53.19 3.912 60 12"/></g><path d="M57.5 18.137A41.938 41.938 0 0 0 57.5 101.863V57.75H36.531V66.25H49V91.576A33.438 33.438 0 0 1 57.5 26.656Z" fill="currentColor"/><path d="M66.75 22.922A37.688 37.688 0 0 1 66.75 97.078Z" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linejoin="miter"/></svg>
       <p>
-        &copy; 2005–<span id="current-year"></span> **Gofio Design** |
-        <a href="privacy.html" class="footer-legal">Legal & Privacy</a
-        > | <a href="marca.html" class="footer-legal">Brand kit</a>
+        &copy; 2005–<span id="current-year">2026</span>
+        <strong>Gofio Design</strong> |
+        <a href="privacy.html">Legal &amp; Privacy</a>
+        | <a href="marca.html">Brand kit</a>
       </p>
       <div id="email-placeholder"></div>
     </footer>
-    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie notice">
-      <p>
-        We use cookies to improve your experience and analyze traffic. You can
-        accept all cookies or reject non-essential ones.
-        <a href="privacy.html">Read more</a
-        >.
-      </p>
-      <div class="cookie-actions">
-        <button type="button" class="cookie-accept" onclick="acceptCookies()">
-          Accept
-        </button>
-        <button type="button" class="cookie-reject" onclick="rejectCookies()">
-          Reject
-        </button>
-      </div>
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
