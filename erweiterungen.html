@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome-Erweiterungen | Gofio Design</title>
+    <meta name="description" content="Kostenlose Open-Source-Erweiterungen für Chrome von Gofio Design: KI-Chats als PDF speichern und den X-Feed aufräumen." />
+    <link rel="canonical" href="https://gofiodesign.eu/erweiterungen.html" />
+    <link rel="alternate" hreflang="es" href="https://gofiodesign.eu/extensiones.html" />
+    <link rel="alternate" hreflang="en" href="https://gofiodesign.eu/extensions.html" />
+    <link rel="alternate" hreflang="de" href="https://gofiodesign.eu/erweiterungen.html" />
+    <link rel="alternate" hreflang="fr" href="https://gofiodesign.eu/extensions-fr.html" />
+    <link rel="alternate" hreflang="x-default" href="https://gofiodesign.eu/extensiones.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gofio Design" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:title" content="Chrome-Erweiterungen | Gofio Design" />
+    <meta property="og:description" content="Kostenlose Open-Source-Erweiterungen für Chrome von Gofio Design: KI-Chats als PDF speichern und den X-Feed aufräumen." />
+    <meta property="og:url" content="https://gofiodesign.eu/erweiterungen.html" />
+    <meta property="og:image" content="https://gofiodesign.eu/assets/projects/ext-chats-ia-pdf.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="assets/fonts/poiret-one-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="portada.css?v=20261122b" />
+    <link rel="stylesheet" href="interior.css?v=20261122x" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#8b421e" />
+  </head>
+  <body>
+    <a class="skip-link" href="#principal">Zum Inhalt springen</a>
+
+
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-Hinweis">
+      <div class="contenedor">
+        <p>Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und den Datenverkehr zu analysieren. Sie können alle Cookies akzeptieren oder die nicht notwendigen ablehnen. <a href="privacy.html">Mehr erfahren</a>.</p>
+        <div class="cookie-actions">
+          <button type="button" class="cookie-accept" onclick="acceptCookies()">Akzeptieren</button>
+          <button type="button" class="cookie-reject" onclick="rejectCookies()">Ablehnen</button>
+        </div>
+      </div>
+    </div>
+
+
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="p-cuadrado" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><rect x="6" y="6" width="108" height="108" rx="5"/><rect x="16" y="16" width="88" height="88" rx="2"/><path d="M16 104 104 16M28 104 104 28"/></g><g fill="currentColor"><circle cx="96" cy="56" r="1.9"/><circle cx="88" cy="64" r="1.9"/><circle cx="96" cy="64" r="1.9"/><circle cx="80" cy="72" r="1.9"/><circle cx="88" cy="72" r="1.9"/><circle cx="96" cy="72" r="1.9"/><circle cx="72" cy="80" r="1.9"/><circle cx="80" cy="80" r="1.9"/><circle cx="88" cy="80" r="1.9"/><circle cx="96" cy="80" r="1.9"/><circle cx="64" cy="88" r="1.9"/><circle cx="72" cy="88" r="1.9"/><circle cx="80" cy="88" r="1.9"/><circle cx="88" cy="88" r="1.9"/><circle cx="96" cy="88" r="1.9"/><circle cx="56" cy="96" r="1.9"/><circle cx="64" cy="96" r="1.9"/><circle cx="72" cy="96" r="1.9"/><circle cx="80" cy="96" r="1.9"/><circle cx="88" cy="96" r="1.9"/><circle cx="96" cy="96" r="1.9"/></g></symbol>
+      <symbol id="p-circulo" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="60" cy="60" r="54"/><circle cx="60" cy="60" r="40"/><path d="M103 60 109.5 72.3 M101.9 69.6 105.5 83 M98.7 78.7 99.2 92.6 M93.6 86.8 91 100.5 M86.8 93.6 81.2 106.4 M78.7 98.7 70.4 109.9 M69.6 101.9 59 111 M60 103 47.7 109.5 M50.4 101.9 37 105.5 M41.3 98.7 27.4 99.2 M33.2 93.6 19.5 91 M26.4 86.8 13.6 81.2 M21.3 78.7 10.1 70.4 M18.1 69.6 9 59 M17 60 10.5 47.7 M18.1 50.4 14.5 37 M21.3 41.3 20.8 27.4 M26.4 33.2 29 19.5 M33.2 26.4 38.8 13.6 M41.3 21.3 49.6 10.1 M50.4 18.1 61 9 M60 17 72.3 10.5 M69.6 18.1 83 14.5 M78.7 21.3 92.6 20.8 M86.8 26.4 100.5 29 M93.6 33.2 106.4 38.8 M98.7 41.3 109.9 49.6 M101.9 50.4 111 61"/><circle cx="60" cy="60" r="27"/><circle cx="60" cy="60" r="16"/></g><circle cx="60" cy="60" r="5" fill="currentColor"/></symbol>
+      <symbol id="p-triangulo" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-linejoin="round"><path stroke-width="2.5" d="M60 8 113 101H7Z"/><path stroke-width="2.5" d="M34 55H86L60 101Z"/><path stroke-width="1.8" stroke-linecap="round" d="M57 23H63M52.9 30H67.1M48.9 37H71.1M44.9 44H75.1M32.7 65H35.3M84.7 65H87.3M28.7 72H39.3M80.7 72H91.3M24.6 79H43.4M76.6 79H95.4M20.6 86H47.4M72.6 86H99.4M16.5 93H51.5M68.5 93H103.5"/></g></symbol>
+    </svg>
+    <header class="cabecera">
+      <div class="barra contenedor">
+        <a class="sello-gd" href="de.html" aria-label="Gofio Design, Startseite">
+          <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.125" stroke-linejoin="round"><circle cx="60" cy="60" r="56.5"/><circle cx="60" cy="60" r="48"/><path d="M60 12 66.81 3.912 71.487 13.395 80.035 7.172 82.307 17.498 92.096 13.501 91.83 24.071 102.291 22.534 99.503 32.733 110.028 33.743 104.881 42.979 114.858 46.479 107.65 54.214 116.5 60 107.65 65.786 114.858 73.521 104.881 77.021 110.028 86.257 99.503 87.267 102.291 97.466 91.83 95.929 92.096 106.499 82.307 102.502 80.035 112.828 71.487 106.605 66.81 116.088 60 108 53.19 116.088 48.513 106.605 39.965 112.828 37.693 102.502 27.904 106.499 28.17 95.929 17.709 97.466 20.497 87.267 9.972 86.257 15.119 77.021 5.142 73.521 12.35 65.786 3.5 60 12.35 54.214 5.142 46.479 15.119 42.979 9.972 33.743 20.497 32.733 17.709 22.534 28.17 24.071 27.904 13.501 37.693 17.498 39.965 7.172 48.513 13.395 53.19 3.912 60 12"/></g><path d="M57.5 18.137A41.938 41.938 0 0 0 57.5 101.863V57.75H36.531V66.25H49V91.576A33.438 33.438 0 0 1 57.5 26.656Z" fill="currentColor"/><path d="M66.75 22.922A37.688 37.688 0 0 1 66.75 97.078Z" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linejoin="miter"/></svg>
+        </a>
+        <nav class="nav-lenguas" aria-label="Navigation">
+          <a class="volver" href="de.html">← Startseite</a>
+          <a href="extensiones.html" hreflang="es" lang="es">ES</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="extensions.html" hreflang="en" lang="en">EN</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="erweiterungen.html" hreflang="de" aria-current="page">DE</a>
+          <span class="punto" aria-hidden="true">·</span>
+          <a href="extensions-fr.html" hreflang="fr" lang="fr">FR</a>
+        </nav>
+      </div>
+      <div class="friso" aria-hidden="true"></div>
+      <div class="frente frente-interior contenedor">
+        <h1 class="titulo">Chrome-Erweiterungen</h1>
+        <p class="gancho">Kleine kostenlose Open-Source-Werkzeuge, um das Internet ruhiger und selbstbestimmter zu nutzen.</p>
+      </div>
+      <div class="friso-fino" aria-hidden="true"></div>
+    </header>
+    <main id="principal">
+      <section class="contenedor" aria-labelledby="h-ext">
+        <h2 id="h-ext">Erweiterungen</h2>
+        <!-- Para añadir una extensión: copia un <article class="ficha"> y cambia imagen (assets/projects/*.jpg, 1280x800), textos y enlaces. -->
+        <div class="fichas">
+          <article class="ficha" id="ext-1">
+            <a class="ficha-vista" tabindex="-1" aria-hidden="true" href="https://chromewebstore.google.com/detail/debjfadjodahfmiabgdclllhgoggaiap" target="_blank" rel="noopener">
+              <img src="assets/projects/ext-chats-ia-pdf.jpg" alt="" width="1280" height="800" loading="lazy" />
+            </a>
+              <span class="ficha-etiqueta">Erweiterung · Produktivität</span>
+              <h3>KI-Chats → Saubere Ansicht + PDF</h3>
+              <dl><div><dt>Problem</dt><dd>Wer ein KI-Gespräch als PDF speichert, bekommt Menüs, Schaltflächen und Seitenleisten mit dazu.</dd></div><div><dt>Idee</dt><dd>Eine saubere Ansicht des Gesprächs, bereit zum Drucken oder Speichern.</dd></div><div><dt>Plan</dt><dd>Funktioniert mit ChatGPT, Claude, Gemini, Copilot und weiteren KIs; erfasst den ganzen Chat und behält Code, Tabellen und Formeln.</dd></div><div><dt>Erledigt</dt><dd>Im Chrome Web Store veröffentlicht. Kostenlos, ohne Datenerhebung.</dd></div></dl>
+              <p class="ficha-enlace ext-enlaces"><a href="https://chromewebstore.google.com/detail/debjfadjodahfmiabgdclllhgoggaiap" target="_blank" rel="noopener">Chrome Web Store<span class="solo-lector"> (öffnet in einem neuen Tab)</span> ↗</a><a href="https://github.com/GofioDesign/ai-chat-print" target="_blank" rel="noopener">Code auf GitHub<span class="solo-lector"> (öffnet in einem neuen Tab)</span> ↗</a></p>
+          </article>
+          <article class="ficha" id="ext-2">
+            <a class="ficha-vista" tabindex="-1" aria-hidden="true" href="https://github.com/GofioDesign/X-only-following" target="_blank" rel="noopener">
+              <img src="assets/projects/ext-solo-siguiendo-x.jpg" alt="" width="1280" height="800" loading="lazy" />
+            </a>
+              <span class="ficha-etiqueta">Erweiterung · Soziale Netzwerke</span>
+              <h3>Nur Gefolgte für X</h3>
+              <dl><div><dt>Problem</dt><dd>Die X-Startseite mischt, wem Sie folgen, mit dem, was der Algorithmus auswählt.</dd></div><div><dt>Idee</dt><dd>Nur sehen, was die Konten posten, denen Sie folgen.</dd></div><div><dt>Plan</dt><dd>Öffnet immer „Folge ich“ und blendet „Für dich“, Werbung und Vorschläge aus; auf Wunsch auch Reposts.</dd></div><div><dt>Erledigt</dt><dd>Beim Chrome Web Store eingereicht; bis dahin über GitHub installierbar.</dd></div></dl>
+              <p class="ficha-enlace ext-enlaces"><span class="ficha-pronto">Im Chrome Web Store in Prüfung</span><a href="https://github.com/GofioDesign/X-only-following" target="_blank" rel="noopener">Code auf GitHub<span class="solo-lector"> (öffnet in einem neuen Tab)</span> ↗</a></p>
+          </article>
+        </div>
+      </section>
+
+      <div class="friso-fino" aria-hidden="true"></div>
+
+      <section class="cierre contenedor" id="donar" aria-labelledby="h-donar">
+        <h2 id="h-donar">Finden Sie sie nützlich?</h2>
+        <p>Ich nutze ChatGPT und Claude, um Projekte zu entwickeln, die die Gesellschaft verbessern, wie diese Erweiterungen. Sie sind kostenlos und bleiben es.</p><p>Wenn Sie mir helfen möchten, die Abos für ChatGPT und Claude zu bezahlen, bin ich Ihnen von Herzen dankbar.</p>
+        <a class="boton-whatsapp boton-paypal" href="https://paypal.me/gofiodesign" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.1 21.3H3.6a.5.5 0 0 1-.5-.6L5.8 3.4c.1-.4.4-.7.8-.7h6.6c3.4 0 5.6 1.8 5 5.1-.6 3.7-3.1 5.5-6.6 5.5H9.3a.8.8 0 0 0-.8.6l-1 6.9a.5.5 0 0 1-.4.5Zm12.4-13c-.1.3-.1.6-.2.9-.8 4.2-3.6 6.1-7.5 6.1h-1.5l-1.2 7.4h2.9a.6.6 0 0 0 .6-.5l.6-3.8a.8.8 0 0 1 .8-.7h.9c3 0 5.3-1.5 5.9-4.8.3-1.9 0-3.4-1.3-4.6Z"/></svg>
+          Mit PayPal unterstützen<span class="solo-lector"> (öffnet in einem neuen Tab)</span>
+        </a>
+        <p class="nota-donar">Freiwillige Spende: Die Erweiterungen funktionieren gleich, ob Sie spenden oder nicht.</p>
+      </section>
+    </main>
+
+
+    <div class="friso" aria-hidden="true"></div>
+    <footer class="pie">
+      <svg class="sello-pie" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.125" stroke-linejoin="round"><circle cx="60" cy="60" r="56.5"/><circle cx="60" cy="60" r="48"/><path d="M60 12 66.81 3.912 71.487 13.395 80.035 7.172 82.307 17.498 92.096 13.501 91.83 24.071 102.291 22.534 99.503 32.733 110.028 33.743 104.881 42.979 114.858 46.479 107.65 54.214 116.5 60 107.65 65.786 114.858 73.521 104.881 77.021 110.028 86.257 99.503 87.267 102.291 97.466 91.83 95.929 92.096 106.499 82.307 102.502 80.035 112.828 71.487 106.605 66.81 116.088 60 108 53.19 116.088 48.513 106.605 39.965 112.828 37.693 102.502 27.904 106.499 28.17 95.929 17.709 97.466 20.497 87.267 9.972 86.257 15.119 77.021 5.142 73.521 12.35 65.786 3.5 60 12.35 54.214 5.142 46.479 15.119 42.979 9.972 33.743 20.497 32.733 17.709 22.534 28.17 24.071 27.904 13.501 37.693 17.498 39.965 7.172 48.513 13.395 53.19 3.912 60 12"/></g><path d="M57.5 18.137A41.938 41.938 0 0 0 57.5 101.863V57.75H36.531V66.25H49V91.576A33.438 33.438 0 0 1 57.5 26.656Z" fill="currentColor"/><path d="M66.75 22.922A37.688 37.688 0 0 1 66.75 97.078Z" fill="none" stroke="currentColor" stroke-width="8.5" stroke-linejoin="miter"/></svg>
+      <p>
+        &copy; 2005–<span id="current-year">2026</span>
+        <strong>Gofio Design</strong> |
+        <a href="privacy.html">Rechtliches &amp; Datenschutz</a>
+        | <a href="marca.html">Markenkit</a>
+      </p>
+      <div id="email-placeholder"></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-55DKZ9C5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+  </body>
+</html>
