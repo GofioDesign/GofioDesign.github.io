@@ -133,7 +133,7 @@ img { height: auto; }
   font-weight: 600; font-size: clamp(1.3rem, 2.6vw, 1.9rem); line-height: 1.25;
   letter-spacing: 0.01em; color: var(--crema-viva);
 }
-.gancho { margin: 0; max-width: 40ch; text-wrap: pretty; font-size: clamp(1.15rem, 1.8vw, 1.4rem); line-height: 1.5; }
+.gancho { margin: 0; max-width: 58ch; text-wrap: pretty; font-size: clamp(1.15rem, 1.8vw, 1.4rem); line-height: 1.5; }
 
 /* El único elemento ámbar de la página: la acción */
 .boton-whatsapp {

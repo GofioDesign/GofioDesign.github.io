@@ -14,7 +14,7 @@ PAGES = {
    ogdesc="Webs, redes de datos, jardines de flora autóctona y patrimonio, hechos para durar.",
    skip="Saltar al contenido", home="Gofio Design, inicio", navlabel="Idiomas", pfile="proyectos.html", projects="Proyectos",
    lema="Cultivamos soluciones",
-   hook="Proyectos y consultoría para la transformación ecosocial. En Tenerife desde 2005: webs, redes, jardines y patrimonio, hechos para durar.",
+   hook="Proyectos y consultoría para la transformación ecosocial. Tecnología, diseño, agricultura y talleres, desde Tenerife.",
    cta="Escríbeme por WhatsApp", layerslabel="Tres capas de trabajo",
    layers=["Identidad e infraestructura digital", "Paisaje y territorio canario", "Gestión de activos y dinamización"],
    h_proj="Proyectos reales", all="Ver los doce proyectos publicados y los que están en marcha",
@@ -39,7 +39,7 @@ PAGES = {
    ogdesc="Websites, data networks, native-flora gardens and heritage, made to last.",
    skip="Skip to content", home="Gofio Design, home", navlabel="Languages", pfile="projects.html", projects="Projects",
    lema="We grow solutions",
-   hook="Projects and consultancy for eco-social change. In Tenerife since 2005: websites, networks, gardens and heritage, made to last.",
+   hook="Projects and consultancy for eco-social change. Technology, design, farming and workshops, from Tenerife.",
    cta="Message me on WhatsApp", layerslabel="Three layers of work",
    layers=["Digital identity and infrastructure", "Canarian landscape and territory", "Asset management and community engagement"],
    h_proj="Real projects", all="See the twelve published projects and those in progress",
@@ -64,7 +64,7 @@ PAGES = {
    ogdesc="Websites, Datennetze, Gärten mit einheimischer Flora und Kulturerbe, auf Dauer angelegt.",
    skip="Zum Inhalt springen", home="Gofio Design, Startseite", navlabel="Sprachen", pfile="projekte.html", projects="Projekte",
    lema="Wir lassen Lösungen wachsen",
-   hook="Projekte und Beratung für den sozial-ökologischen Wandel. Auf Teneriffa seit 2005: Websites, Netzwerke, Gärten und Kulturerbe, auf Dauer angelegt.",
+   hook="Projekte und Beratung für den sozial-ökologischen Wandel. Technologie, Gestaltung, Landwirtschaft und Workshops, von Teneriffa aus.",
    cta="Schreiben Sie mir auf WhatsApp", layerslabel="Drei Arbeitsbereiche",
    layers=["Digitale Identität und Infrastruktur", "Kanarische Landschaft und Territorium", "Asset Management und Community-Engagement"],
    h_proj="Echte Projekte", all="Alle zwölf veröffentlichten Projekte und die laufenden ansehen",
@@ -89,7 +89,7 @@ PAGES = {
    ogdesc="Sites web, réseaux de données, jardins de flore indigène et patrimoine, faits pour durer.",
    skip="Aller au contenu", home="Gofio Design, accueil", navlabel="Langues", pfile="projets.html", projects="Projets",
    lema="Nous cultivons des solutions",
-   hook="Projets et conseil pour la transformation écosociale. À Tenerife depuis 2005&#8239;: sites web, réseaux, jardins et patrimoine, faits pour durer.",
+   hook="Projets et conseil pour la transformation écosociale. Technologie, design, agriculture et ateliers, depuis Tenerife.",
    cta="Écrivez-moi sur WhatsApp", layerslabel="Trois domaines de travail",
    layers=["Identité numérique et infrastructure", "Paysage et territoire canarien", "Gestion d’actifs et dynamisation sociale"],
    h_proj="Projets réels", all="Voir les douze projets publiés et ceux en cours",
@@ -182,7 +182,7 @@ def page(lang):
     out.append(seo_lib.block(lang, p["file"], p["title"], p["ogdesc"], "assets/og/inicio-%s.png" % lang, seo_lib.ALT_HOME[lang]))
     out.append('    <link rel="preload" href="assets/fonts/poiret-one-latin.woff2" as="font" type="font/woff2" crossorigin />')
     out.append('    <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />')
-    out.append('    <link rel="stylesheet" href="portada.css?v=20261115c" />')
+    out.append('    <link rel="stylesheet" href="portada.css?v=20261122b" />')
     out.append('    <link rel="icon" href="/favicon.ico" sizes="any" />')
     out.append('    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />')
     out.append('    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />')
