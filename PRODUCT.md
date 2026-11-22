@@ -50,17 +50,18 @@ El método Problema · Idea · Plan · Hecho es el procedimiento que une los cua
 - Páginas: portada, proyectos, kit de marca, legal/privacidad. Sitemap y robots mantenidos a mano.
 - Compromiso de accesibilidad WCAG 2.2 AA ya trabajado (contraste, landmarks, encabezados, foco).
 - **Cifras pendientes de revisión:** el meta description y los títulos de la portada afirman «hasta un 70 % menos en la factura de agua», «redes Omada» y «TV satélite colectiva con 5 años de garantía». El usuario indica que deben confirmarse o retirarse; el trabajo futuro no debe repetirlas como hechos hasta que se confirmen, ni inventar otras.
-- **Decisión del 13 nov 2026:** la portada y el kit de marca dejan de llevar tagline y línea de método. «Curiosidad natural» y «Del problema a la idea, de la idea al concepto» se retiran; bajo el nombre no va ninguna frase. Los SVG del kit que incluyen el tagline (logotipos horizontales y verticales, OG) quedan pendientes de regenerar sin él.
+- **Decisión del 22 nov 2026 (sustituye a la del 13 nov):** vuelve el lema. Bajo el nombre va **«Cultivamos soluciones»** y, como descriptor, **«Proyectos y consultoría para la transformación ecosocial»**: el estudio hace proyectos propios y acompaña a administraciones, empresas y organizaciones, y usa la tecnología, el diseño, la agricultura y los talleres sociales como medios, no como fin. EN We grow solutions / Projects and consultancy for eco-social change · DE Wir lassen Lösungen wachsen / Projekte und Beratung für den sozial-ökologischen Wandel · FR Nous cultivons des solutions / Projets et conseil pour la transformation écosociale.
+- *Decisión anterior, ya sustituida:* la portada y el kit de marca dejan de llevar tagline y línea de método. «Curiosidad natural» y «Del problema a la idea, de la idea al concepto» se retiran; bajo el nombre no va ninguna frase. Los SVG del kit que incluyen el tagline (logotipos horizontales y verticales, OG) quedan pendientes de regenerar sin él.
 - **Fichas de proyecto:** el método se muestra en cuatro pasos, Problema · Idea · Plan · Hecho, en lugar de Problema · Idea · Concepto. En proyectos en desarrollo, Hecho queda abierto y se dice.
 - Terminología fija: nombres de las tres capas de servicio tal como figuran en la portada.
 
 ## Brand Commitments
 
-- Nombre: Gofio Design. Tagline: «Curiosidad natural» (EN Natural curiosity · FR Curiosité naturelle · DE Natürliche Neugier).
+- Nombre: Gofio Design. Lema: «Cultivamos soluciones». Descriptor: «Proyectos y consultoría para la transformación ecosocial» (traducciones en Capabilities and Constraints). «Curiosidad natural» queda retirado.
 - Kit de marca publicado en `marca.html` y `assets/marca/`, con normas de uso explícitas que el usuario ha hecho públicas y por tanto vinculantes: monograma GD en relieve sobre fondo claro y en hueco sobre fondo oscuro; título «GOFIO DESIGN» en hueco sobre claro y en relieve sobre oscuro; versiones planas o tinta marrón cuando el nombre tenga que leerse como texto.
 - Paleta oficial: crema #EFE4CF (fondo), beige #E6D7BA (capas), arena #C9AE80 (líneas y relieve), marrón #554242 (títulos, nav, pie), ámbar #E6B458 (acento, nunca para texto), texto #4A3F35.
 - Tipografía oficial: Poiret One con los glifos propios G y D para títulos; Nunito para texto.
-- Activos: `assets/brand/` (favicons, sello, OG image) y `assets/marca/` (logotipos horizontales y verticales, monogramas, título, icono de app, OG en SVG, zip completo).
+- Activos: `assets/brand/` (favicons, sello, OG image) y `assets/marca/` (logotipos horizontales y verticales, vertical con lema, monogramas, título, icono de app, OG en SVG, `png/` con todos los logotipos en PNG, `redes/` con avatar y portadas para LinkedIn, X, Facebook, Google, Instagram y Dribbble, zip completo).
 - Voz: castellano directo, frases cortas, sin anglicismos innecesarios; tono cercano y profesional.
 
 ## Evidence on Hand

@@ -13,7 +13,8 @@ PAGES = {
    desc="Estudio en Tenerife desde 2005. Webs, redes de datos, jardines de flora autóctona y patrimonio, hechos para durar. Escríbeme por WhatsApp.",
    ogdesc="Webs, redes de datos, jardines de flora autóctona y patrimonio, hechos para durar.",
    skip="Saltar al contenido", home="Gofio Design, inicio", navlabel="Idiomas", pfile="proyectos.html", projects="Proyectos",
-   hook="Estudio en Tenerife desde 2005. Webs, redes, jardines y patrimonio, hechos para durar.",
+   lema="Cultivamos soluciones",
+   hook="Proyectos y consultoría para la transformación ecosocial. En Tenerife desde 2005: webs, redes, jardines y patrimonio, hechos para durar.",
    cta="Escríbeme por WhatsApp", layerslabel="Tres capas de trabajo",
    layers=["Identidad e infraestructura digital", "Paisaje y territorio canario", "Gestión de activos y dinamización"],
    h_proj="Proyectos reales", all="Ver los doce proyectos publicados y los que están en marcha",
@@ -37,7 +38,8 @@ PAGES = {
    desc="Studio in Tenerife since 2005. Websites, data networks, native-flora gardens and heritage, made to last. Message me on WhatsApp.",
    ogdesc="Websites, data networks, native-flora gardens and heritage, made to last.",
    skip="Skip to content", home="Gofio Design, home", navlabel="Languages", pfile="projects.html", projects="Projects",
-   hook="A studio in Tenerife since 2005. Websites, networks, gardens and heritage, made to last.",
+   lema="We grow solutions",
+   hook="Projects and consultancy for eco-social change. In Tenerife since 2005: websites, networks, gardens and heritage, made to last.",
    cta="Message me on WhatsApp", layerslabel="Three layers of work",
    layers=["Digital identity and infrastructure", "Canarian landscape and territory", "Asset management and community engagement"],
    h_proj="Real projects", all="See the twelve published projects and those in progress",
@@ -61,7 +63,8 @@ PAGES = {
    desc="Studio auf Teneriffa seit 2005. Websites, Datennetze, Gärten mit einheimischer Flora und Kulturerbe, auf Dauer angelegt. Schreiben Sie mir auf WhatsApp.",
    ogdesc="Websites, Datennetze, Gärten mit einheimischer Flora und Kulturerbe, auf Dauer angelegt.",
    skip="Zum Inhalt springen", home="Gofio Design, Startseite", navlabel="Sprachen", pfile="projekte.html", projects="Projekte",
-   hook="Studio auf Teneriffa seit 2005. Websites, Netzwerke, Gärten und Kulturerbe, auf Dauer angelegt.",
+   lema="Wir lassen Lösungen wachsen",
+   hook="Projekte und Beratung für den sozial-ökologischen Wandel. Auf Teneriffa seit 2005: Websites, Netzwerke, Gärten und Kulturerbe, auf Dauer angelegt.",
    cta="Schreiben Sie mir auf WhatsApp", layerslabel="Drei Arbeitsbereiche",
    layers=["Digitale Identität und Infrastruktur", "Kanarische Landschaft und Territorium", "Asset Management und Community-Engagement"],
    h_proj="Echte Projekte", all="Alle zwölf veröffentlichten Projekte und die laufenden ansehen",
@@ -85,7 +88,8 @@ PAGES = {
    desc="Studio à Tenerife depuis 2005. Sites web, réseaux de données, jardins de flore indigène et patrimoine, faits pour durer. Écrivez-moi sur WhatsApp.",
    ogdesc="Sites web, réseaux de données, jardins de flore indigène et patrimoine, faits pour durer.",
    skip="Aller au contenu", home="Gofio Design, accueil", navlabel="Langues", pfile="projets.html", projects="Projets",
-   hook="Studio à Tenerife depuis 2005. Sites web, réseaux, jardins et patrimoine, faits pour durer.",
+   lema="Nous cultivons des solutions",
+   hook="Projets et conseil pour la transformation écosociale. À Tenerife depuis 2005&#8239;: sites web, réseaux, jardins et patrimoine, faits pour durer.",
    cta="Écrivez-moi sur WhatsApp", layerslabel="Trois domaines de travail",
    layers=["Identité numérique et infrastructure", "Paysage et territoire canarien", "Gestion d’actifs et dynamisation sociale"],
    h_proj="Projets réels", all="Voir les douze projets publiés et ceux en cours",
@@ -215,6 +219,7 @@ def page(lang):
     out.append('')
     out.append('      <div class="frente contenedor">')
     out.append('        <h1 class="titulo">GOFIO DESIGN</h1>')
+    out.append('        <p class="lema">%s</p>' % p["lema"])
     out.append('        <p class="gancho">%s</p>' % p["hook"].replace(". ", ".<br />\n          ", 1))
     out.append('        ' + btn)
     out.append('      </div>')
