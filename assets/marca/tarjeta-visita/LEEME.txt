@@ -1,0 +1,11 @@
+Tarjeta de visita Gofio Design, 22 nov 2026
+
+85 x 55 mm al corte, con 3 mm de sangrado por lado (91 x 61 mm). Textos a trazos.
+- tarjeta-visita-imprenta.pdf: pág. 1 anverso, pág. 2 reverso. Es el archivo para la imprenta.
+- tarjeta-anverso.svg / tarjeta-reverso.svg: los mismos diseños en SVG.
+- tarjeta-anverso.png / tarjeta-reverso.png: vistas previas.
+Anverso: barro, cenefas arriba y abajo, pintadera, título y lema «Cultivamos soluciones».
+Reverso: crema y marrón; empresa en el tercio superior, línea con rombo central, datos con iconos
+y QR que abre https://gofiodesign.eu/personal/juangonzalez.vcf (módulo 0,59 mm, no reducir).
+Si cambian los datos de contacto, basta con actualizar personal/juangonzalez.vcf: no hay que reimprimir.
+Generador: herramientas/tarjeta.py.

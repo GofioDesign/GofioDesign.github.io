@@ -56,6 +56,10 @@ chrome --headless=new --hide-scrollbars --allow-file-access-from-files --window-
   ```sh
   python -I herramientas/redes.py "$PWD"
   ```
+- `tarjeta.py`: tarjeta de visita (SVG) en `assets/marca/tarjeta-visita/` y la ficha `juangonzalez.vcf`, que hay que copiar a `personal/`. Nombre, cargo, lema, descriptor y estilo del separador están arriba del script. Necesita `fonttools`, `brotli` y `segno`; el PNG y el PDF de imprenta se sacan con `cairosvg` y `pypdf`.
+  ```sh
+  python -I herramientas/tarjeta.py "$PWD" assets/marca/tarjeta-visita && mv assets/marca/tarjeta-visita/juangonzalez.vcf personal/
+  ```
 - `sello.py`: escribe el sello «Un proyecto Gofio Design» en `assets/sello/`. Necesita `fonttools` y `brotli`; conviene instalarlos en un entorno virtual.
   ```sh
   python -I herramientas/sello.py "$PWD" herramientas/datos

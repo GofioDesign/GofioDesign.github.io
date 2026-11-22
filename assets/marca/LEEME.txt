@@ -24,3 +24,4 @@ redes/: en SVG y PNG.
 - linkedin-perfil 1584x396 y x-cabecera 1500x500: el contenido va a la derecha para no quedar bajo la foto.
 - linkedin-empresa 1128x191, facebook-portada 1640x624, google-portada 1024x576.
 - instagram-publicacion 1080x1350, instagram-historia 1080x1920, dribbble-presentacion 1600x1200.
+tarjeta-visita/: tarjeta de visita 85x55 mm en SVG, PNG y PDF de imprenta (ver su LEEME).
