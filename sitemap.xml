@@ -94,4 +94,18 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://gofiodesign.eu/extensiones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/extensiones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/extensions.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://gofiodesign.eu/extensions.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gofiodesign.eu/extensiones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gofiodesign.eu/extensions.html"/>
+    <lastmod>2026-11-22</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
