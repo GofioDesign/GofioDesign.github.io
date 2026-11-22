@@ -5,13 +5,16 @@ root, symfile = sys.argv[1], sys.argv[2]
 GD = open(sys.argv[3], encoding="utf-8").read().strip()
 SYMBOLS = open(symfile, encoding="utf-8").read().strip()
 WA = "M12 2a9.9 9.9 0 0 0-8.5 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .9.9-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"
+# Versiones para saltar la caché del navegador: súbelas al cambiar portada.css o los favicons
+V_CSS = "20261122b"
+V_FAVICON = "20261122"
 GD_OLD = '<path d="M64 99.1887V171.876C27.0639 161.429 0 127.47 0 87.1886C0 42.6581 33.0758 5.85272 76 0V87.1886H38V99.1887H64Z"/><path d="M100 1.52588e-05C142.924 5.85274 176 42.6581 176 87.1887C176 131.719 142.924 168.525 100 174.377L100 1.52588e-05Z"/>'
 
 PAGES = {
  "es": dict(file="index.html", locale="es_ES",
-   title="Gofio Design | Estudio en Tenerife desde 2005",
-   desc="Estudio en Tenerife desde 2005. Webs, redes de datos, jardines de flora autóctona y patrimonio, hechos para durar. Escríbeme por WhatsApp.",
-   ogdesc="Webs, redes de datos, jardines de flora autóctona y patrimonio, hechos para durar.",
+   title="Gofio Design | Cultivamos soluciones",
+   desc="Proyectos y consultoría para la transformación ecosocial desde Tenerife: tecnología, diseño, agricultura y talleres. Escríbeme por WhatsApp.",
+   ogdesc="Proyectos y consultoría para la transformación ecosocial. Tecnología, diseño, agricultura y talleres, desde Tenerife.",
    skip="Saltar al contenido", home="Gofio Design, inicio", navlabel="Idiomas", pfile="proyectos.html", projects="Proyectos",
    lema="Cultivamos soluciones",
    hook="Proyectos y consultoría para la transformación ecosocial. Tecnología, diseño, agricultura y talleres, desde Tenerife.",
@@ -34,9 +37,9 @@ PAGES = {
    cookie="Utilizamos cookies para mejorar su experiencia y analizar el tráfico. Puede aceptar todas las cookies o rechazar las no esenciales.",
    more="Más información", accept="Aceptar", reject="Rechazar"),
  "en": dict(file="en.html", locale="en_GB",
-   title="Gofio Design | Studio in Tenerife since 2005",
-   desc="Studio in Tenerife since 2005. Websites, data networks, native-flora gardens and heritage, made to last. Message me on WhatsApp.",
-   ogdesc="Websites, data networks, native-flora gardens and heritage, made to last.",
+   title="Gofio Design | We grow solutions",
+   desc="Projects and consultancy for eco-social change from Tenerife: technology, design, farming and workshops. Message me on WhatsApp.",
+   ogdesc="Projects and consultancy for eco-social change. Technology, design, farming and workshops, from Tenerife.",
    skip="Skip to content", home="Gofio Design, home", navlabel="Languages", pfile="projects.html", projects="Projects",
    lema="We grow solutions",
    hook="Projects and consultancy for eco-social change. Technology, design, farming and workshops, from Tenerife.",
@@ -59,9 +62,9 @@ PAGES = {
    cookie="We use cookies to improve your experience and analyse traffic. You can accept all cookies or reject non-essential ones.",
    more="Read more", accept="Accept", reject="Reject"),
  "de": dict(file="de.html", locale="de_DE",
-   title="Gofio Design | Studio auf Teneriffa seit 2005",
-   desc="Studio auf Teneriffa seit 2005. Websites, Datennetze, Gärten mit einheimischer Flora und Kulturerbe, auf Dauer angelegt. Schreiben Sie mir auf WhatsApp.",
-   ogdesc="Websites, Datennetze, Gärten mit einheimischer Flora und Kulturerbe, auf Dauer angelegt.",
+   title="Gofio Design | Wir lassen Lösungen wachsen",
+   desc="Projekte und Beratung für den sozial-ökologischen Wandel von Teneriffa aus: Technologie, Gestaltung, Landwirtschaft und Workshops. Schreiben Sie mir auf WhatsApp.",
+   ogdesc="Projekte und Beratung für den sozial-ökologischen Wandel. Technologie, Gestaltung, Landwirtschaft und Workshops, von Teneriffa aus.",
    skip="Zum Inhalt springen", home="Gofio Design, Startseite", navlabel="Sprachen", pfile="projekte.html", projects="Projekte",
    lema="Wir lassen Lösungen wachsen",
    hook="Projekte und Beratung für den sozial-ökologischen Wandel. Technologie, Gestaltung, Landwirtschaft und Workshops, von Teneriffa aus.",
@@ -84,9 +87,9 @@ PAGES = {
    cookie="Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und den Datenverkehr zu analysieren. Sie können alle Cookies akzeptieren oder die nicht notwendigen ablehnen.",
    more="Mehr erfahren", accept="Akzeptieren", reject="Ablehnen"),
  "fr": dict(file="fr.html", locale="fr_FR",
-   title="Gofio Design | Studio à Tenerife depuis 2005",
-   desc="Studio à Tenerife depuis 2005. Sites web, réseaux de données, jardins de flore indigène et patrimoine, faits pour durer. Écrivez-moi sur WhatsApp.",
-   ogdesc="Sites web, réseaux de données, jardins de flore indigène et patrimoine, faits pour durer.",
+   title="Gofio Design | Nous cultivons des solutions",
+   desc="Projets et conseil pour la transformation écosociale depuis Tenerife : technologie, design, agriculture et ateliers. Écrivez-moi sur WhatsApp.",
+   ogdesc="Projets et conseil pour la transformation écosociale. Technologie, design, agriculture et ateliers, depuis Tenerife.",
    skip="Aller au contenu", home="Gofio Design, accueil", navlabel="Langues", pfile="projets.html", projects="Projets",
    lema="Nous cultivons des solutions",
    hook="Projets et conseil pour la transformation écosociale. Technologie, design, agriculture et ateliers, depuis Tenerife.",
@@ -182,10 +185,10 @@ def page(lang):
     out.append(seo_lib.block(lang, p["file"], p["title"], p["ogdesc"], "assets/og/inicio-%s.png" % lang, seo_lib.ALT_HOME[lang]))
     out.append('    <link rel="preload" href="assets/fonts/poiret-one-latin.woff2" as="font" type="font/woff2" crossorigin />')
     out.append('    <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />')
-    out.append('    <link rel="stylesheet" href="portada.css?v=20261122b" />')
-    out.append('    <link rel="icon" href="/favicon.ico" sizes="any" />')
-    out.append('    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />')
-    out.append('    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />')
+    out.append('    <link rel="stylesheet" href="portada.css?v=%s" />' % V_CSS)
+    out.append('    <link rel="icon" href="/favicon.ico?v=%s" sizes="any" />' % V_FAVICON)
+    out.append('    <link rel="icon" href="/assets/brand/favicon.svg?v=%s" type="image/svg+xml" />' % V_FAVICON)
+    out.append('    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png?v=%s" />' % V_FAVICON)
     out.append('    <link rel="manifest" href="/site.webmanifest" />')
     out.append('    <meta name="theme-color" content="#8b421e" />')
     out.append('  </head>')

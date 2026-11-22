@@ -8,6 +8,8 @@ El sitio no tiene paso de compilación. Estos scripts escriben los HTML y los re
 
 Los textos de los cuatro idiomas están en `PAGES`, dentro de `portadas.py`. No edites los HTML a mano: se sobrescriben.
 
+Si cambias `portada.css` o los favicons, sube `V_CSS` o `V_FAVICON` al principio de `portadas.py` para que los navegadores no usen la copia antigua. Las demás páginas llevan el mismo `?v=` escrito a mano.
+
 ```sh
 python -I herramientas/portadas.py "$PWD" herramientas/datos/symbols.txt herramientas/datos/logo-inner.txt
 ```
@@ -26,7 +28,7 @@ Si falta una traducción, el script se detiene y muestra qué texto falta.
 
 ## SEO y Open Graph
 
-`seo_lib.py` escribe Open Graph, la tarjeta de X/Twitter y el JSON-LD. Lo usan `portadas.py` y `proyectos_i18n.py`. Para el kit y privacidad:
+`seo_lib.py` escribe Open Graph, la tarjeta de X/Twitter y el JSON-LD. `poner_bloque()` sustituye el bloque entero de la página, así que los scripts se pueden ejecutar las veces que haga falta sin duplicarlo. La descripción del estudio para el JSON-LD es `DESC_ORG`. Lo usan `portadas.py` y `proyectos_i18n.py`. Para el kit y privacidad:
 
 ```sh
 python -I herramientas/seo_interiores.py "$PWD"
@@ -48,7 +50,7 @@ chrome --headless=new --hide-scrollbars --allow-file-access-from-files --window-
   python -I herramientas/logo_sistema.py vista.html herramientas/datos/logo-prop.txt herramientas/datos/logo-16.txt
   ```
 - `pintaderas.py`: imprime los tres símbolos (`python -I herramientas/pintaderas.py > herramientas/datos/symbols.txt`).
-- `kit.py`: escribe los SVG de `assets/marca/` y los HTML para rasterizar iconos y favicons.
+- `kit.py`: escribe los SVG de `assets/marca/`, el favicon (`assets/brand/favicon.svg`, el sello completo a sangre sobre barro) y los HTML para rasterizar `favicon.ico`, `favicon-16/32`, `apple-touch-icon` e `icon-192/512` con ese mismo dibujo.
   ```sh
   python -I herramientas/kit.py "$PWD" herramientas/datos
   ```

@@ -17,3 +17,5 @@ Profile.pdf
 .impeccable/build/tests/
 .impeccable/build/map-inspections/
 .impeccable/review/diff/
+__pycache__/
+*.pyc

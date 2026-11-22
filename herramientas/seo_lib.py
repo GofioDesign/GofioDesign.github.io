@@ -1,14 +1,14 @@
 """Bloque de Open Graph, Twitter y datos estructurados común a todas las páginas."""
-import json
+import json, re
 
 SITE = "https://gofiodesign.eu/"
 LOCALE = {"es": "es_ES", "en": "en_GB", "de": "de_DE", "fr": "fr_FR"}
 HOMES = {"es": "index.html", "en": "en.html", "de": "de.html", "fr": "fr.html"}
 ALT_HOME = {
-    "es": "Logotipo de Gofio Design, una pintadera con las letras GD, junto al nombre y «Estudio en Tenerife desde 2005».",
-    "en": "Gofio Design logo, a pintadera seal with the letters GD, next to the name and “A studio in Tenerife since 2005”.",
-    "de": "Logo von Gofio Design, ein Pintadera-Siegel mit den Buchstaben GD, neben dem Namen und „Studio auf Teneriffa seit 2005“.",
-    "fr": "Logo de Gofio Design, une pintadera avec les lettres GD, à côté du nom et « Studio à Tenerife depuis 2005 ».",
+    "es": "Logotipo de Gofio Design, una pintadera con las letras GD, junto al nombre y el lema «Cultivamos soluciones».",
+    "en": "Gofio Design logo, a pintadera seal with the letters GD, next to the name and the motto “We grow solutions”.",
+    "de": "Logo von Gofio Design, ein Pintadera-Siegel mit den Buchstaben GD, neben dem Namen und dem Leitsatz „Wir lassen Lösungen wachsen“.",
+    "fr": "Logo de Gofio Design, une pintadera avec les lettres GD, à côté du nom et de la devise « Nous cultivons des solutions ».",
 }
 ALT_PROJ = {
     "es": "«Proyectos web» de Gofio Design, con capturas de Mi Terapia Regresiva, Archipiélago Vivo y Diez Claves.",
@@ -16,7 +16,7 @@ ALT_PROJ = {
     "de": "„Webprojekte“ von Gofio Design, mit Bildschirmfotos von Mi Terapia Regresiva, Archipiélago Vivo und Diez Claves.",
     "fr": "« Projets web » de Gofio Design, avec des captures de Mi Terapia Regresiva, Archipiélago Vivo et Diez Claves.",
 }
-DESC_ORG = "Estudio en Tenerife desde 2005: webs, redes de datos, jardines de flora autóctona y patrimonio."
+DESC_ORG = "Proyectos y consultoría para la transformación ecosocial desde Tenerife: tecnología, diseño, agricultura y talleres."
 
 
 def org():
@@ -59,3 +59,18 @@ def block(lang, url, title, desc, image, alt, ldtype="WebPage", alternates=True,
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, separators=(",", ":"))
     L.append('<script type="application/ld+json">%s</script>' % ld.replace("</", "<\\/"))
     return "\n".join(indent + x for x in L)
+
+
+# Una línea del bloque: meta og:* / twitter:* o el JSON-LD
+_LINEA = re.compile(r'[ \t]*(?:<meta (?:property="og:|name="twitter:)[^\n]*|<script type="application/ld\+json">[^\n]*</script>)\n')
+
+
+def poner_bloque(s, blk):
+    """Sustituye el bloque de la página por blk. Quita todas las copias que haya (de ejecuciones anteriores),
+    así que ejecutar el script varias veces deja siempre una sola."""
+    m = _LINEA.search(s)
+    if not m:
+        raise ValueError("la página no tiene bloque de Open Graph donde escribir")
+    i = m.start()
+    s = _LINEA.sub("", s)
+    return s[:i] + blk + "\n" + s[i:]

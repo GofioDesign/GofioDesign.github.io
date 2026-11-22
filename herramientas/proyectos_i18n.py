@@ -133,6 +133,10 @@ T = [
  ("<dd>En estudio.</dd>", "<dd>Under study.</dd>", "<dd>In Prüfung.</dd>", "<dd>À l’étude.</dd>"),
  ("Una aplicación de meditación, en fase de idea.", "A meditation app, at the idea stage.", "Eine Meditations-App, noch in der Ideenphase.", "Une application de méditation, au stade de l’idée."),
  ("Muy pronto, más detalles.", "More details soon.", "Bald mehr dazu.", "Plus de détails très bientôt."),
+ # Enlace a las extensiones de Chrome
+ ('<h2 id="h-extensiones">Extensiones para Chrome</h2>', '<h2 id="h-extensiones">Chrome extensions</h2>', '<h2 id="h-extensiones">Chrome-Erweiterungen</h2>', '<h2 id="h-extensiones">Extensions pour Chrome</h2>'),
+ ("También hago pequeñas herramientas gratuitas para el navegador.", "I also make small free tools for the browser.", "Ich entwickle auch kleine kostenlose Werkzeuge für den Browser.", "Je crée aussi de petits outils gratuits pour le navigateur."),
+ ('<a href="extensiones.html">Ver las extensiones →</a>', '<a href="extensions.html">See the extensions →</a>', '<a href="erweiterungen.html">Zu den Erweiterungen →</a>', '<a href="extensions-fr.html">Voir les extensions →</a>'),
 ]
 
 
@@ -181,6 +185,6 @@ for lang in ("es", "en", "de", "fr"):
     title = re.search(r"<title>(.*?)</title>", s).group(1)
     ogdesc = re.search(r'property="og:description" content="([^"]*)"', s).group(1)
     blk = seo_lib.block(lang, FILES[lang], title, ogdesc, "assets/og/proyectos-%s.png" % lang, seo_lib.ALT_PROJ[lang], "CollectionPage")
-    s = re.sub(r'    <meta property="og:type".*?(?:</script>|<meta property="og:image" content="[^"]*" />)\n', lambda m: blk + "\n", s, count=1, flags=re.S)
+    s = seo_lib.poner_bloque(s, blk)
     io.open(FILES[lang], "w", encoding="utf-8", newline="\n").write(s)
     print(lang, FILES[lang])

@@ -28,11 +28,12 @@ def page(name, lang, body):
 
 
 LOGO = '<img src="assets/marca/logotipo-crema.svg" width="%d" height="%d" alt="">'
+# Lema y descriptor, los mismos que en la portada (portadas.py)
 HOME = {
- "es": ("Estudio en Tenerife desde 2005", "Webs, redes, jardines y patrimonio, hechos para durar."),
- "en": ("A studio in Tenerife since 2005", "Websites, networks, gardens and heritage, made to last."),
- "de": ("Studio auf Teneriffa seit 2005", "Websites, Netzwerke, Gärten und Kulturerbe, auf Dauer angelegt."),
- "fr": ("Studio à Tenerife depuis 2005", "Sites web, réseaux, jardins et patrimoine, faits pour durer."),
+ "es": ("Cultivamos soluciones", "Proyectos y consultoría para la transformación ecosocial, desde Tenerife."),
+ "en": ("We grow solutions", "Projects and consultancy for eco-social change, from Tenerife."),
+ "de": ("Wir lassen Lösungen wachsen", "Projekte und Beratung für den sozial-ökologischen Wandel, von Teneriffa aus."),
+ "fr": ("Nous cultivons des solutions", "Projets et conseil pour la transformation écosociale, depuis Tenerife."),
 }
 for lang, (sub, line) in HOME.items():
     page("inicio-" + lang, lang, '<div class="caja">%s<div class="col"><p class="titulo" style="font-size:96px">Gofio Design</p>'

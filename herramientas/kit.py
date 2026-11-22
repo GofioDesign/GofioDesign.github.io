@@ -50,9 +50,11 @@ for tone, col in (("crema", CREMA), ("marron", MARRON)):
 files["icono-app.svg"] = svg("0 0 512 512",
     '<rect width="512" height="512" fill="%s"/><svg x="76" y="76" width="360" height="360" viewBox="0 0 120 120">%s</svg>' % (BARRO, LOGO),
     "Gofio Design", CREMA)
-# Favicon: solo el GD, marrón; crema si el navegador está en modo oscuro
-files["favicon.svg"] = svg("0 0 120 120", LOGO16, "Gofio Design",
-    extra="<style>svg{color:%s}@media (prefers-color-scheme:dark){svg{color:%s}}</style>" % (MARRON, CREMA))
+# Favicon: el sello completo (con el anillo de triángulos) en crema, a sangre sobre barro.
+# El mismo dibujo sirve para favicon.ico, apple-touch-icon e icon-192/512.
+FAVICON = ('<rect width="120" height="120" fill="%s"/>'
+           '<svg x="-1.15" y="-1.15" width="122.3" height="122.3" viewBox="0 0 120 120">%s</svg>' % (BARRO, LOGO))
+files["favicon.svg"] = svg("0 0 120 120", FAVICON, "Gofio Design", CREMA)
 # Imagen para redes 1200x630: barro, frisos arriba y abajo, pintadera y título
 tile = re.sub(r'^<svg[^>]*>|</svg>\s*$', "", FRISO.strip())
 og = ('<defs><pattern id="friso" width="192" height="44" patternUnits="userSpaceOnUse">%s</pattern></defs>'
@@ -62,7 +64,7 @@ og = ('<defs><pattern id="friso" width="192" height="44" patternUnits="userSpace
       '<svg x="110" y="185" width="260" height="260" viewBox="0 0 120 120">%s</svg>'
       '<svg x="410" y="257" width="682" height="120" viewBox="0 0 682 120"><g fill="currentColor">%s</g></svg>'
       % (tile, BARRO, LOGO, TITLE))
-files["og-image.svg"] = svg("0 0 1200 630", og, "Gofio Design, estudio en Tenerife desde 2005", CREMA)
+files["og-image.svg"] = svg("0 0 1200 630", og, "Gofio Design, cultivamos soluciones", CREMA)
 
 for name, text in files.items():
     write(os.path.join(OUT, name), text)
@@ -79,9 +81,7 @@ page = lambda w, h, body: ('<!doctype html><html><head><style>html,body{margin:0
 inline = lambda vb, body, col, bg="": '<svg viewBox="%s" style="color:%s">%s%s</svg>' % (vb, col, bg, body)
 write(os.path.join(R, "og.html"), page(1200, 630, inline("0 0 1200 630", og, CREMA)))
 for size in (180, 192, 512):
-    pad = round(size * 0.15)
-    body = '<rect width="120" height="120" fill="%s"/><svg x="18" y="18" width="84" height="84" viewBox="0 0 120 120">%s</svg>' % (BARRO, LOGO)
-    write(os.path.join(R, "icon-%d.html" % size), page(size, size, inline("0 0 120 120", body, CREMA)))
-for size, art in ((16, LOGO16), (32, LOGO), (48, LOGO)):
-    write(os.path.join(R, "fav-%d.html" % size), page(size, size, inline("0 0 120 120", art, MARRON)))
+    write(os.path.join(R, "icon-%d.html" % size), page(size, size, inline("0 0 120 120", FAVICON, CREMA)))
+for size in (16, 32, 48):
+    write(os.path.join(R, "fav-%d.html" % size), page(size, size, inline("0 0 120 120", FAVICON, CREMA)))
 print("ok", len(files))
