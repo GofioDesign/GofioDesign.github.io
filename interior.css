@@ -97,3 +97,6 @@
 .ext-enlaces .ficha-pronto { margin: 0; padding: 0.3rem 0 0; flex-basis: 100%; }
 .cierre p + p { margin-top: -1rem; }
 .nota-donar { margin-top: 1.25rem !important; font-size: 0.95rem !important; }
+
+.enlace-extensiones p { margin: 0; max-width: 62ch; font-size: 1.1rem; }
+.enlace-extensiones a { font-weight: 800; color: var(--crema-viva); }
