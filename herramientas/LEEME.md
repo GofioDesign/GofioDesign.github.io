@@ -52,6 +52,10 @@ chrome --headless=new --hide-scrollbars --allow-file-access-from-files --window-
   ```sh
   python -I herramientas/kit.py "$PWD" herramientas/datos
   ```
+- `redes.py`: escribe el vertical con lema (`assets/marca/vertical-lema-*.svg`), los PNG de todos los logotipos (`assets/marca/png/`) y el avatar y las portadas de redes (`assets/marca/redes/`). El lema y el descriptor están arriba del script. Necesita `fonttools`, `brotli` y `cairosvg`. Después hay que rehacer el zip del kit.
+  ```sh
+  python -I herramientas/redes.py "$PWD"
+  ```
 - `sello.py`: escribe el sello «Un proyecto Gofio Design» en `assets/sello/`. Necesita `fonttools` y `brotli`; conviene instalarlos en un entorno virtual.
   ```sh
   python -I herramientas/sello.py "$PWD" herramientas/datos

@@ -1,9 +1,10 @@
-Kit de marca Gofio Design (SVG), 15 nov 2026
+Kit de marca Gofio Design (SVG y PNG), 15 nov 2026; lema, PNG y redes añadidos el 22 nov 2026
 
 Los textos están convertidos a trazos: no hace falta instalar fuentes.
 - logotipo-crema / -marron / -ambar: la pintadera de dientes de sierra con el GD. Uso principal: crema sobre barro.
 - horizontal-crema / -marron: pintadera y título en línea.
 - vertical-crema / -marron: pintadera encima, título debajo.
+- vertical-lema-crema / -marron: como el vertical, con el lema «Cultivamos soluciones» debajo.
 - titulo-crema / -marron: «GOFIO DESIGN» en Poiret One con la G y la D propias.
 - monograma-gd-crema / -marron: solo el GD, sin dientes ni anillo, para tamaños por debajo de 24 px.
 - icono-app: 512x512, barro a sangre. favicon: solo el GD en crema sobre un cuadrado de barro.
@@ -13,3 +14,13 @@ Los textos están convertidos a trazos: no hace falta instalar fuentes.
 Tintas planas, sin relieves ni sombras. Espacio libre alrededor del logotipo: al menos la banda de dientes.
 Paleta: barro #8B421E, barro hondo #59220D, crema #EFE4CF, marrón #554242, ámbar #E6B458 (solo acento).
 Contraste: crema sobre barro 5,8:1; marrón sobre crema 7,6:1 (WCAG AA).
+
+Lema: Cultivamos soluciones (EN We grow solutions · DE Wir lassen Lösungen wachsen · FR Nous cultivons des solutions).
+Descriptor: Proyectos y consultoría para la transformación ecosocial.
+png/: todos los logotipos en PNG, fondo transparente (1024 px de ancho; 2000 px los horizontales).
+redes/: en SVG y PNG.
+- avatar (1080x1080): pintadera crema sobre barro, cabe en el recorte circular. Sirve para LinkedIn,
+  X, WhatsApp, Instagram, Dribbble y Google.
+- linkedin-perfil 1584x396 y x-cabecera 1500x500: el contenido va a la derecha para no quedar bajo la foto.
+- linkedin-empresa 1128x191, facebook-portada 1640x624, google-portada 1024x576.
+- instagram-publicacion 1080x1350, instagram-historia 1080x1920, dribbble-presentacion 1600x1200.
