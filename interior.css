@@ -91,3 +91,9 @@
 }
 .boton-copiar:hover { background: var(--crema); color: var(--barro-hondo); }
 .copiado { min-height: 1.5em; margin: 1rem 0 0; font-weight: 700; }
+
+/* Extensiones de Chrome */
+.ext-enlaces { display: flex; flex-wrap: wrap; gap: 0.2rem 1.4rem; }
+.ext-enlaces .ficha-pronto { margin: 0; padding: 0.3rem 0 0; flex-basis: 100%; }
+.cierre p + p { margin-top: -1rem; }
+.nota-donar { margin-top: 1.25rem !important; font-size: 0.95rem !important; }
